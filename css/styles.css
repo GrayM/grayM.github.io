@@ -14,11 +14,17 @@
 }
 /*-------------------TOP SECTION---------------------*/
 
-.background {
-    height: 450px;
+.parallax {
     text-align: right;
     background: url('../images/bw.jpg');
-    background-size: 100% 450px;
+    background-attachment:fixed;
+    background-position: center center;
+    
+
+}
+.background {
+    text-align: right;
+    /*background: url('../images/bw.jpg');*/
     position: relative;
 }
 .main-header {
@@ -92,7 +98,6 @@ h4 {
 @media screen and (max-width: 639px) {
     .background {
         height: 600px;
-        background-repeat: no-repeat;
         background-size: 100% 600px;
     }
     h2 {
@@ -106,7 +111,6 @@ h4 {
 @media screen and (min-width: 640px) {
     .background {
         height: 650px;
-        background-repeat: no-repeat;
         background-size: 100% 650px;
     }
     h2 {
@@ -165,7 +169,6 @@ h4 {
     }
     .background {
         height: 800px;
-        background-repeat: no-repeat;
         background-size: 100% 800px;
     }
     h2 {
@@ -190,6 +193,10 @@ h4 {
         height: 70px;
         width: 70px;
     }
+    .background {
+        height: 900px;
+        background-size: 100% 900px;
+    }
     h2 {
         font-size: 5em;
         font-weight: 200;
@@ -211,6 +218,10 @@ h4 {
     .project1, .project2, .project3, .project4 {
         width: 25%;
         vertical-align: top;
+    }
+    .background {
+        height: 100vh;
+        background-size: 100% 100vh;
     }
     .main-header {
         bottom: 60px;
