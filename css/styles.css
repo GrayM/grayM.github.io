@@ -1,0 +1,233 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    transition:all .5s ease;
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Anglo;
+    src: url(../fonts/ICE-CS.ttf);
+}
+@font-face {
+    font-family: JustDieAlready;
+    src: url(../fonts/JustDieAlready.ttf);
+}
+/*-------------------TOP SECTION---------------------*/
+
+.background {
+    height: 450px;
+    text-align: right;
+    background: url('../images/bw.jpg');
+    background-size: 100% 450px;
+    position: relative;
+}
+.main-header {
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: right;
+    bottom: 0;
+    right: 0;
+}
+.main-header img {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    right: 10px;
+    bottom: 5px;
+}
+
+/*------------------LINKS-------------------------*/
+
+#about {
+    right: 50px;
+    position: relative;
+    bottom: 0px;
+    font-size: 2em;
+}
+#mail {
+    padding-left: 50px;
+}
+#git {
+    padding-right: 50px;
+}
+.main-header .fancybox p {
+    font-size: .5em;
+}
+.content p {
+    text-align: center;
+}
+span {
+    font-size: 1.8em;
+}
+h2, h4 {
+    padding-right: 5px;
+}
+h2 {
+    font-size: 2.3em;
+}
+h4 {
+    font-size: 1em;
+    font-weight: 100;
+}
+/*----------------------BOTTOM CONTENT----------------------*/
+
+.content {
+    background-color: RGBA(234, 234, 234, 1);
+}
+.screenShots p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+}
+.screenShots img {
+    max-width: 95%;
+}
+.project1, .project2, .project3, .project4 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+/*----------------------RESPONSIVENESS-----------------------*/
+
+@media screen and (max-width: 639px) {
+    .background {
+        height: 600px;
+        background-repeat: no-repeat;
+        background-size: 100% 600px;
+    }
+    h2 {
+        font-size: 2.2em;
+    }
+    h4 {
+        font-size: 1.0em;
+        font-weight: 100;
+    }
+}
+@media screen and (min-width: 640px) {
+    .background {
+        height: 650px;
+        background-repeat: no-repeat;
+        background-size: 100% 650px;
+    }
+    h2 {
+        font-size: 3em;
+        font-weight: 100;
+    }
+    h4 {
+        font-size: 1.5em;
+        font-weight: 100;
+    }
+}
+@media screen and (min-width: 769px) {
+    .project1, .project2, .project3, .project4 {
+        width: 50%;
+        float: left;
+        vertical-align: top;
+    }
+    .background {
+        height: 700px;
+        background-size: 100% 700px;
+    }
+    h2 {
+        font-size: 3.8em;
+        font-weight: 100;
+    }
+    h4 {
+        font-size: 1.8em;
+        font-weight: 100;
+    }
+    .main-header img {
+        height: 50px;
+        width: 50px;
+    }
+    .screenShots img {
+        vertical-align: top;
+        /*width: 100%;*/
+    }
+    .screenShots p {
+        /*width:50%;*/
+        text-align: center;
+    }
+}
+@media screen and (min-width: 961px) {
+    .project1 {
+        float: left;
+        vertical-align: top;
+    }
+    .screenShots {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .group a {
+        width: 50%;
+        float: left;
+        vertical-align: top;
+    }
+    .background {
+        height: 800px;
+        background-repeat: no-repeat;
+        background-size: 100% 800px;
+    }
+    h2 {
+        font-size: 4.8em;
+        font-weight: 200;
+    }
+    h4 {
+        font-size: 2.3em;
+        font-weight: 100;
+    }
+    .main-header img {
+        height: 60px;
+        width: 60px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .main-header {
+        bottom: 40px;
+        right: 40px;
+    }
+    .main-header img {
+        height: 70px;
+        width: 70px;
+    }
+    h2 {
+        font-size: 5em;
+        font-weight: 200;
+    }
+    h4 {
+        font-size: 2.4em;
+        font-weight: 100;
+    }
+    .project1, .project2, .project3, .project4 {
+        width: 33%;
+        float: left;
+    }
+    .screenShots img {
+        vertical-align: top;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 1550px) {
+    .project1, .project2, .project3, .project4 {
+        width: 25%;
+        vertical-align: top;
+    }
+    .main-header {
+        bottom: 60px;
+        right: 60px;
+    }
+    .main-header img {
+        height: 80px;
+        width: 80px;
+    }
+    h2 {
+        font-size: 6em;
+        font-weight: 200;
+    }
+    h4 {
+        font-size: 2.5em;
+        font-weight: 100;
+        margin-bottom:50px;
+    }
+    
+}
