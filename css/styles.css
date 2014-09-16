@@ -15,8 +15,8 @@
 /*-------------------TOP SECTION---------------------*/
 
 .parallax {
-    text-align: right;
-    background: url('../images/bw.jpg');
+    text-align: left;
+    background: url('http://2.bp.blogspot.com/-Hoo11FkQ-lM/UF9ce_s2iVI/AAAAAAAAAQw/vsuTPc9hoZ8/s640/tiger-3d-black-and-white-hd-wallpaper.jpg');
     background-attachment:fixed;
     background-position: center center;
     background-size:cover;
@@ -25,7 +25,7 @@
 
 }
 .background {
-    text-align: right;
+    text-align: left;
     /*background: url('../images/bw.jpg');*/
     position: relative;
     background-color:#003;
@@ -35,16 +35,16 @@
 .main-header {
     position: absolute;
     font-family: 'Titillium Web', sans-serif;
-    text-align: right;
+    text-align: left;
     bottom: 0;
-    right: 0;
+    left: 70px;
     z-index:2;
 }
 .main-header img {
     width: 40px;
     height: 40px;
     position: relative;
-    right: 10px;
+    left: 50px;
     bottom: 5px;
 }
 
