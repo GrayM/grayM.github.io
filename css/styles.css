@@ -19,13 +19,18 @@
     background: url('../images/bw.jpg');
     background-attachment:fixed;
     background-position: center center;
-    
+    background-size:cover;
+    background-repeat:no-repeat;
+
 
 }
 .background {
     text-align: right;
     /*background: url('../images/bw.jpg');*/
     position: relative;
+    background-color:#003;
+    /*color:black;*/
+    opacity:.7;
 }
 .main-header {
     position: absolute;
@@ -33,6 +38,7 @@
     text-align: right;
     bottom: 0;
     right: 0;
+    z-index:2;
 }
 .main-header img {
     width: 40px;
