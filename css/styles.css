@@ -53,10 +53,7 @@ body{
     position: absolute;
     left: 30px;
 }
-.stick {
-    position: relative;
-    height: 250px;
-}
+
 .vanish {
     transform:translateY(-220px);
 }

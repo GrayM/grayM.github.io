@@ -16,14 +16,14 @@ $(window).scroll(function(){
 
         if (shouldSetSticky && !isSticking) {
             isSticking = true;
-        } else if(!shouldSetSticky && isSticking){
+        } else if(!shouldSetSticky0 && isSticking){
             isSticking = false;
         } else if (shouldSetSticky0 && isSticking) {
             h.addClass("vanish");
             isSticking = false;
         } else if (!shouldSetSticky0 && !isSticking) {
             h.removeClass("vanish");
-            isSticking = true;
+            isSticking = false;
         }
 
     });
