@@ -16,7 +16,7 @@
 
 .parallax {
     text-align: left;
-    background: url('http://2.bp.blogspot.com/-Hoo11FkQ-lM/UF9ce_s2iVI/AAAAAAAAAQw/vsuTPc9hoZ8/s640/tiger-3d-black-and-white-hd-wallpaper.jpg');
+    background: url('../images/tiger.jpg');
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
@@ -60,7 +60,7 @@
 }
 .fa-angle-double-down {
     position:fixed;
-    bottom:0;
+    bottom:20px;
     margin:0 auto;
     text-align:middle;
     transform: translateX(-50%);
