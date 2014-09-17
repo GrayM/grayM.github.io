@@ -16,23 +16,21 @@
 
 .parallax {
     text-align: left;
-    background: url('../images/tiger.jpg');
-    background-attachment: fixed;
-    background-position: center center;
+    background: url('../images/tiger.jpg') no-repeat center center fixed;
     background-size: cover;
+    overflow:hidden;
     max-width: 100%;
     width: 100%;
     background-repeat: no-repeat;
 }
 .background {
     text-align: left;
-    /*background: url('../images/bw.jpg');*/
     position: relative;
     background-color: #003;
     color: RGBA(253, 253, 253, 1);
     opacity: .7;
     height: 100vh;
-    background-size: 100% 100vh;
+    /*background-size: 100% 100vh;*/
 }
 .main-header {
     color: RGBA(253, 253, 253, 1);
@@ -52,19 +50,19 @@
     bottom: 5px;
 }
 .icons {
-    position:absolute;
-    left:30px;
+    position: absolute;
+    left: 30px;
 }
 .stick {
     position: absolute;
 }
 .fa-angle-double-down {
-    position:fixed;
-    bottom:20px;
-    margin:0 auto;
-    text-align:middle;
+    position: fixed;
+    bottom: 20px;
+    margin: 0 auto;
+    text-align: middle;
     transform: translateX(-50%);
-    left:50%;
+    left: 50%;
 }
 /*------------------LINKS-------------------------*/
 
@@ -91,29 +89,22 @@ span {
     font-size: 1.8em;
 }
 h2, h4 {
-    line-height:1em;
+    line-height: 1em;
     padding-right: 5px;
     color: RGBA(253, 253, 253, 1);
 }
 h4 {
-    margin-bottom:50px;
-    padding-left:5px;
+    margin-bottom: 50px;
+    padding-left: 5px;
 }
-/*h2 {
-    font-size: 2.3em;
-}
-h4 {
-    font-size: 1em;
-    font-weight: 100;
-}*/
+
+
 /*----------------------BOTTOM CONTENT----------------------*/
 
-/*.content {
-    background-color: RGBA(234, 234, 234, 1);
-}*/
 
 .screenShots {
-    overflow: auto;
+    overflow: scroll;
+
 }
 .screenShots p {
     font-family: 'Titillium Web', sans-serif;
@@ -121,6 +112,7 @@ h4 {
     font-weight: bold;
     text-align: center;
     color: RGBA(253, 253, 253, 1);
+    z-index:2;
 }
 .screenShots img {
     max-width: 95%;
@@ -131,28 +123,14 @@ h4 {
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
-/*@media screen and (max-width: 639px) {
-    h2 {
-        font-size: 2.2em;
+@media screen and (min-width: 480px) and (max-width: 768px) {
+    .project1, .project2, .project3, .project4 {
+        width: 100%;
     }
-    h4 {
-        font-size: 1.0em;
-        font-weight: 100;
-    }
-}*/
-/*@media screen and (min-width: 640px) {
-    h2 {
-        font-size: 3em;
-        font-weight: 100;
-    }
-    h4 {
-        font-size: 1.5em;
-        font-weight: 100;
-    }
-}*/
+}
 @media screen and (min-width: 769px) {
     .project1, .project2, .project3, .project4 {
-        width: 50%;
+        width: 100%;
         float: left;
         vertical-align: top;
     }
@@ -178,7 +156,8 @@ h4 {
     }
 }
 @media screen and (min-width: 961px) {
-    .project1 {
+    .project1, .project2, .project3, .project4 {
+        width: 50%;
         float: left;
         vertical-align: top;
     }
@@ -204,7 +183,7 @@ h4 {
         width: 60px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .main-header {
         bottom: 40px;
         right: 40px;
