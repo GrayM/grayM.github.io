@@ -12,6 +12,9 @@
     font-family: JustDieAlready;
     src: url(../fonts/JustDieAlready.ttf);
 }
+body{
+    padding:0;
+}
 /*-------------------TOP SECTION---------------------*/
 
 .parallax {
@@ -35,7 +38,7 @@
     font-family: 'Titillium Web', sans-serif;
     text-align: left;
     top: 50px;
-    left: 70px;
+    left: 40px;
     z-index: 2;
     position: fixed;
 }
@@ -53,6 +56,9 @@
 .stick {
     position: relative;
     height: 250px;
+}
+.vanish {
+    transform:translateY(-220px);
 }
 .fa-angle-double-down {
     position: fixed;
@@ -126,8 +132,12 @@ hr {
     .parallax {
         background-position: 60% 100%;
     }
+  /*  .main-header {
+        top:15px;
+        left:10px;
+    }*/
     .project1, .project2, .project3, .project4 {
-        width:90%;
+        width:100%;
         margin:0 auto;
         margin-bottom:50px;
     }
@@ -155,7 +165,7 @@ hr {
 }
 @media screen and (min-width: 961px) {
     .project1, .project2, .project3, .project4 {
-        width: 49%;
+        width: 100%;
         display: inline-block;
         vertical-align: top;
     }
@@ -181,10 +191,15 @@ hr {
         width: 60px;
     }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1024px) {
     .main-header img {
         height: 70px;
         width: 70px;
+    }
+    .project1, .project2, .project3, .project4 {
+        width: 49%;
+        display: inline-block;
+        vertical-align: top;
     }
     h2 {
         font-size: 5em;
@@ -199,7 +214,7 @@ hr {
         height: 400px;
     }
 }
-@media screen and (min-width: 1550px) {
+@media screen and (min-width: 1480px) {
     .project1, .project2, .project3, .project4 {
         width: 24%;
     }
