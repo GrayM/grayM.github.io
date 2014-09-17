@@ -17,12 +17,9 @@
 .parallax {
     text-align: left;
     background: url('../images/tiger.jpg');
-    background-position:60% 80%;
-    background-attachment:fixed;
+    background-position: 60% 80%;
+    background-attachment: fixed;
     background-size: cover;
-    /*overflow:auto;*/
-    /*background-height:100vh;*/
-    /*background-repeat: no-repeat;*/
 }
 .background {
     text-align: left;
@@ -30,7 +27,7 @@
     background-color: #003;
     color: RGBA(253, 253, 253, 1);
     opacity: .7;
-    height:100vh;
+    height: 100vh;
 }
 .main-header {
     color: RGBA(253, 253, 253, 1);
@@ -54,7 +51,8 @@
     left: 30px;
 }
 .stick {
-    position: absolute;
+    position: relative;
+    height: 200px;
 }
 .fa-angle-double-down {
     position: fixed;
@@ -82,7 +80,7 @@
     font-size: .5em;
 }
 .screenShots p {
-    padding-top:25px;
+    padding-top: 25px;
 }
 span {
     font-size: 1.8em;
@@ -97,17 +95,14 @@ h4 {
     padding-left: 5px;
 }
 hr {
-    margin:0;
+    margin: 0;
 }
-
-
 /*----------------------BOTTOM CONTENT----------------------*/
-
 
 .screenShots {
     overflow: scroll;
-    background-color:rgba(0,0,0,0);
-
+    background-color: rgba(0, 0, 0, 0);
+    display: block;
 }
 .screenShots p {
     font-family: 'Titillium Web', sans-serif;
@@ -115,32 +110,28 @@ hr {
     font-weight: bold;
     text-align: center;
     color: RGBA(253, 253, 253, 1);
-    z-index:2;
-
+    z-index: 2;
 }
 .screenShots img {
     max-width: 95%;
 }
 .project1, .project2, .project3, .project4 {
     text-align: center;
+    margin: 0 auto;
     margin-bottom: 50px;
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .project1, .project2, .project3, .project4 {
-        width: 100%;
-    }
     .parallax {
-        background-position:60% 100%;
-
+        background-position: 60% 100%;
+    }
+    .project1, .project2, .project3, .project4 {
+        width:90%;
+        margin:0 auto;
     }
 }
 @media screen and (min-width: 768px) {
-    .project1, .project2, .project3, .project4 {
-        width: 100%;
-        /*vertical-align: top;*/
-    }
     h2 {
         font-size: 3.8em;
         font-weight: 100;
@@ -155,17 +146,16 @@ hr {
     }
     .screenShots img {
         vertical-align: top;
-        /*width: 100%;*/
+        width: 100%;
     }
     .screenShots p {
-        /*width:50%;*/
         text-align: center;
     }
 }
 @media screen and (min-width: 961px) {
     .project1, .project2, .project3, .project4 {
-        width: 50%;
-        float: left;
+        width: 49%;
+        display: inline-block;
         vertical-align: top;
     }
     .screenShots {
@@ -191,10 +181,6 @@ hr {
     }
 }
 @media screen and (min-width: 1280px) {
-    .main-header {
-        bottom: 40px;
-        right: 40px;
-    }
     .main-header img {
         height: 70px;
         width: 70px;
@@ -207,10 +193,6 @@ hr {
         font-size: 2.4em;
         font-weight: 100;
     }
-    .project1, .project2, .project3, .project4 {
-        width: 33%;
-        float: left;
-    }
     .screenShots img {
         vertical-align: top;
         height: 400px;
@@ -218,12 +200,7 @@ hr {
 }
 @media screen and (min-width: 1550px) {
     .project1, .project2, .project3, .project4 {
-        width: 25%;
-    }
-    .main-header {
-        bottom: 60px;
-        right: 60px;
-        position: fixed;
+        width: 24%;
     }
     .main-header img {
         height: 80px;

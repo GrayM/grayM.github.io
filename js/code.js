@@ -1,8 +1,33 @@
 $(window).scroll(function(){
     $(".main-header").css("top",Math.max(0,250-$(this).scrollTop()));
 
-    $("p").css("position",Math.max(0,250-$("p").scrollTop()));
+    // $("p").css("position",Math.max(0,250-$("p").scrollTop()));
+
+    var s = $(".background");
+
+    var isSticking = false;
+
+    $(window).scroll(function() {
+        var windowpos = $(window).scrollTop();
+        var pos = s.position();
+        var shouldSetSticky = windowpos >= pos.top + 700;
+
+        if (shouldSetSticky && !isSticking) {
+            s.addClass("stick");
+            // t.addClass("tag");
+            // g.addClass("head1");
+            isSticking = true;
+        } else if(!shouldSetSticky && isSticking){
+            s.removeClass("stick");
+            // t.removeClass("tag");
+            // g.removeClass("head1");
+            isSticking = false;
+        }
+
+    });
 });
+
+
 
 // $.fn.followTo = function (pos) {
 //     var $this = this,
