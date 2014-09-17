@@ -215,6 +215,9 @@ hr {
     .project1, .project2, .project3, .project4 {
         width: 24%;
     }
+    .main-header, .icons {
+        padding-left:70px;
+    }
     .main-header img {
         height: 80px;
         width: 80px;

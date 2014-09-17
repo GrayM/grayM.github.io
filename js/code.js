@@ -13,7 +13,7 @@ $(window).scroll(function(){
         var pos = s.position();
         var posh = h.position();
         var shouldSetSticky0 = windowpos >= posh.top;
-        var shouldSetSticky = windowpos >= pos.top + 700;
+        var shouldSetSticky = windowpos >= pos.top + 600;
 
         if (shouldSetSticky0 && !isSticking) {
             isSticking = true;
