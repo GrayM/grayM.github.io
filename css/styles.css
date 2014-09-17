@@ -17,7 +17,7 @@
 .parallax {
     text-align: left;
     background: url('../images/tiger.jpg');
-    background-position:center center;
+    background-position:60% 80%;
     background-attachment:fixed;
     background-size: cover;
     /*overflow:auto;*/
@@ -81,9 +81,8 @@
 .main-header .fancybox p {
     font-size: .5em;
 }
-.content p {
-    text-align: center;
-    color: RGBA(253, 253, 253, 1);
+.screenShots p {
+    padding-top:25px;
 }
 span {
     font-size: 1.8em;
