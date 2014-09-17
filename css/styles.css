@@ -52,6 +52,7 @@ body{
 .icons {
     position: absolute;
     left: 30px;
+    transition: 0s;
 }
 
 .vanish {
