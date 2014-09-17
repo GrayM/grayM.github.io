@@ -1,8 +1,11 @@
+*:not(.icons), *:after:not(.icons), *:before:not(.icons) {
+    transition: all .25s ease;
+
+}
 *, *:after, *:before {
-    box-sizing: border-box;
-    transition: all .5s ease;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 @font-face {
     font-family: Anglo;
@@ -12,8 +15,8 @@
     font-family: JustDieAlready;
     src: url(../fonts/JustDieAlready.ttf);
 }
-body{
-    padding:0;
+body {
+    padding: 0;
 }
 /*-------------------TOP SECTION---------------------*/
 
@@ -49,21 +52,36 @@ body{
     left: 20px;
     bottom: 5px;
 }
-.icons {
+.main-header .icons {
     position: absolute;
-    width:100%;
+    width: 100%;
     left: 30px;
-    transition: 0s;
+    /*transition: 0s;*/
 }
-
+span {
+    font-size: 1.8em;
+}
+h2, h4 {
+    line-height: 1em;
+    padding-right: 5px;
+    color: RGBA(253, 253, 253, 1);
+}
+h4 {
+    margin-bottom: 50px;
+    padding-left: 5px;
+}
+hr {
+    margin: 0;
+}
+/*-----------------dynamic JS classes------------*/
 .vanish {
-    transform:translateY(-220px);
+    transform: translateY(-220px);
 }
 .iconMove {
-    position:fixed;
-    bottom:10px;
-    right:10px;
-    transition: 0s;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    /*transition: 0s;*/
 }
 .fa-angle-double-down {
     position: fixed;
@@ -93,21 +111,7 @@ body{
 .screenShots p {
     padding-top: 25px;
 }
-span {
-    font-size: 1.8em;
-}
-h2, h4 {
-    line-height: 1em;
-    padding-right: 5px;
-    color: RGBA(253, 253, 253, 1);
-}
-h4 {
-    margin-bottom: 50px;
-    padding-left: 5px;
-}
-hr {
-    margin: 0;
-}
+
 /*----------------------BOTTOM CONTENT----------------------*/
 
 .screenShots {
@@ -132,7 +136,7 @@ hr {
     margin-bottom: 50px;
 }
 .fa-lg {
-    font-size:2em;
+    font-size: 2em;
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
@@ -140,26 +144,24 @@ hr {
     .parallax {
         background-position: 60% 100%;
     }
-    .fa-3x {
-        font-size:4em;
+    .fa-4x {
+        font-size: 3em;
+        transition:0s;
     }
     .fa-lg {
-        font-size: 2em;
+        font-size: 1.5em;
+        transition:0s;
     }
     h2 {
-        font-size:3.5em;
+        font-size: 3.5em;
     }
     h4 {
-        font-size:1.5em;
+        font-size: 1.5em;
     }
-  /*  .main-header {
-        top:15px;
-        left:10px;
-    }*/
     .project1, .project2, .project3, .project4 {
-        width:100%;
-        margin:0 auto;
-        margin-bottom:50px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
     }
 }
 @media screen and (min-width: 768px) {
@@ -174,6 +176,7 @@ hr {
     .main-header img {
         height: 50px;
         width: 50px;
+        transition:0s;
     }
     .screenShots img {
         vertical-align: top;
@@ -239,7 +242,7 @@ hr {
         width: 24%;
     }
     .main-header, .icons {
-        padding-left:70px;
+        padding-left: 70px;
     }
     .main-header img {
         height: 80px;
