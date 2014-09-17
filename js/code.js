@@ -19,9 +19,9 @@ $(window).scroll(function(){
             isSticking = true;
         } else if(!shouldSetSticky0 && isSticking){
             isSticking = false;
-        } else if (shouldSetSticky && isSticking) {
+        } else if (shouldSetSticky0 && isSticking) {
             h.addClass("vanish");
-            isSticking = false;
+            isSticking = true;
         } else if (!shouldSetSticky0 && !isSticking) {
             h.removeClass("vanish");
             isSticking = false;
