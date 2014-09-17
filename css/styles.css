@@ -157,7 +157,7 @@ h4 {
 }
 @media screen and (min-width: 961px) {
     .project1, .project2, .project3, .project4 {
-        width: 50%;
+        width: 100%;
         float: left;
         vertical-align: top;
     }
