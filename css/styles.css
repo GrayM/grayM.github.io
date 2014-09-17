@@ -52,7 +52,7 @@
 }
 .stick {
     position: relative;
-    height: 200px;
+    height: 250px;
 }
 .fa-angle-double-down {
     position: fixed;
@@ -129,6 +129,7 @@ hr {
     .project1, .project2, .project3, .project4 {
         width:90%;
         margin:0 auto;
+        margin-bottom:50px;
     }
 }
 @media screen and (min-width: 768px) {
