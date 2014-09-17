@@ -61,6 +61,7 @@ body{
     position:fixed;
     bottom:10px;
     right:10px;
+    transition: 0s;
 }
 .fa-angle-double-down {
     position: fixed;
