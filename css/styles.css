@@ -16,12 +16,13 @@
 
 .parallax {
     text-align: left;
-    background: url('../images/tiger.jpg') no-repeat center center fixed;
+    background: url('../images/tiger.jpg');
+    background-position:70% 100%;
+    background-attachment:fixed;
     background-size: cover;
-    overflow:hidden;
-    max-width: 100%;
-    width: 100%;
-    background-repeat: no-repeat;
+    /*overflow:auto;*/
+    /*background-height:100vh;*/
+    /*background-repeat: no-repeat;*/
 }
 .background {
     text-align: left;
@@ -29,8 +30,7 @@
     background-color: #003;
     color: RGBA(253, 253, 253, 1);
     opacity: .7;
-    height: 100vh;
-    /*background-size: 100% 100vh;*/
+    height:100vh;
 }
 .main-header {
     color: RGBA(253, 253, 253, 1);
@@ -127,11 +127,14 @@ h4 {
     .project1, .project2, .project3, .project4 {
         width: 100%;
     }
+    .parallax {
+        background-position:60% 100%;
+
+    }
 }
 @media screen and (min-width: 768px) {
     .project1, .project2, .project3, .project4 {
         width: 100%;
-        float: left;
         /*vertical-align: top;*/
     }
     h2 {
