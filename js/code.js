@@ -10,15 +10,16 @@ $(window).scroll(function(){
 
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
+        var pos = s.position();
         var posh = h.position();
         var shouldSetSticky0 = windowpos >= posh.top;
-        // var shouldSetSticky = windowpos >= pos.top + 700;
+        var shouldSetSticky = windowpos >= pos.top + 700;
 
         if (shouldSetSticky0 && !isSticking) {
             isSticking = true;
         } else if(!shouldSetSticky0 && isSticking){
             isSticking = false;
-        } else if (shouldSetSticky0 && isSticking) {
+        } else if (shouldSetSticky && isSticking) {
             h.addClass("vanish");
             isSticking = false;
         } else if (!shouldSetSticky0 && !isSticking) {
