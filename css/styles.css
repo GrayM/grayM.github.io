@@ -17,7 +17,7 @@
 .parallax {
     text-align: left;
     background: url('../images/tiger.jpg');
-    background-position:70% 100%;
+    background-position:center center;
     background-attachment:fixed;
     background-size: cover;
     /*overflow:auto;*/
@@ -97,6 +97,9 @@ h4 {
     margin-bottom: 50px;
     padding-left: 5px;
 }
+hr {
+    margin:0;
+}
 
 
 /*----------------------BOTTOM CONTENT----------------------*/
@@ -104,6 +107,7 @@ h4 {
 
 .screenShots {
     overflow: scroll;
+    background-color:rgba(0,0,0,0);
 
 }
 .screenShots p {
@@ -113,6 +117,7 @@ h4 {
     text-align: center;
     color: RGBA(253, 253, 253, 1);
     z-index:2;
+
 }
 .screenShots img {
     max-width: 95%;
