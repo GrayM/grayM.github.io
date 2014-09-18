@@ -77,8 +77,14 @@ hr {
 }
 .iconMove {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 0px;
+    right: 0px;
+    padding-right:40px;
+    padding-top:7px;
+    padding-bottom:7px;
+    text-align:right;
+    background-color:RGBA(0, 0, 35, 1);
+    width:100%;
     /*transition: 0s;*/
 }
 .fa-angle-double-down {
@@ -109,7 +115,11 @@ hr {
 .screenShots p {
     padding-top: 25px;
 }
-
+/*.shrink {
+    height:300px;
+    overflow:hidden;
+    display:block;
+}*/
 /*----------------------BOTTOM CONTENT----------------------*/
 
 .screenShots {
@@ -131,10 +141,24 @@ hr {
 .project1, .project2, .project3, .project4 {
     text-align: center;
     margin: 0 auto;
-    margin-bottom: 50px;
+    /*max-height:400px;*/
+    overflow:hidden;
+    margin-bottom: 70px;
+    /*min-width:100%;*/
+    max-height:300px;
+    
+}
+.project1 a img, .project2 a img, .project3 a img, .project4 a img {
+    /*max-height:400px;*/
+    /*height:100%;*/
+    /*height:100%;*/
+    /*min-width:90%;*/
+    /*overflow:hidden;*/
+    /*overflow:hidden;*/
+    /*width:90%;*/
 }
 .fa-lg {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
@@ -147,7 +171,7 @@ hr {
         transition:0s;
     }
     .fa-lg {
-        font-size: 1.5em;
+        font-size: 1.3em;
         transition:0s;
     }
     h2 {
@@ -156,11 +180,7 @@ hr {
     h4 {
         font-size: 1.5em;
     }
-    .project1, .project2, .project3, .project4 {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 50px;
-    }
+    
 }
 @media screen and (min-width: 768px) {
     h2 {
@@ -183,12 +203,16 @@ hr {
     .screenShots p {
         text-align: center;
     }
+    .project1, .project2, .project3, .project4 {
+        max-height:500px;
+    }
 }
 @media screen and (min-width: 961px) {
     .project1, .project2, .project3, .project4 {
-        width: 100%;
+        /*width: 49%;*/
         display: inline-block;
-        vertical-align: top;
+        overflow:hidden;
+        /*vertical-align: top;*/
     }
     .screenShots {
         margin: 0 auto;
@@ -211,6 +235,9 @@ hr {
         height: 60px;
         width: 60px;
     }
+    /*.project1 a img, .project2 a img, .project3 a img, .project4 a img {
+        max-height:600px;
+    }*/
 }
 @media screen and (min-width: 1024px) {
     .main-header img {
@@ -219,8 +246,9 @@ hr {
     }
     .project1, .project2, .project3, .project4 {
         width: 49%;
-        display: inline-block;
-        vertical-align: top;
+        /*overflow:hidden;*/
+        /*display: inline-block;*/
+        /*vertical-align: top;*/
     }
     h2 {
         font-size: 5em;
@@ -234,6 +262,9 @@ hr {
         vertical-align: top;
         height: 400px;
     }
+    /*.project1 a img, .project2 a img, .project3 a img, .project4 a img {
+        max-height:700px;
+    }*/
 }
 @media screen and (min-width: 1480px) {
     .project1, .project2, .project3, .project4 {
@@ -255,4 +286,7 @@ hr {
         font-weight: 100;
         margin-bottom: 50px;
     }
+    /*.project1 a img, .project2 a img, .project3 a img, .project4 a img {
+        max-height:700px;
+    }*/
 }
