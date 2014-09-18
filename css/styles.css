@@ -152,6 +152,7 @@ hr {
     /*max-height:300px;*/
     
 }
+
 .project1 a, .project2 a, .project3 a, .project4 a {
     /*display:inline-block;*/
     font-size:1.5em;
@@ -186,8 +187,8 @@ hr {
     width:300px;
     border-radius:50%;
     position: relative;
-    top: 30%;
-    transform: translateY(10%);
+    top: 40%;
+    transform: translateY(16%);
 }
 .profile p {
     font-family: 'Titillium Web', sans-serif;
@@ -198,7 +199,7 @@ hr {
 
 }
 .bottom {
-    height:400px;
+    height:200px;
     background-color: RGBA(51, 51, 51, 1);
 }
 /*----------------------RESPONSIVENESS-----------------------*/
@@ -269,6 +270,9 @@ hr {
         min-height:600px;
         margin-bottom:400px;
     }
+    .project4 {
+        margin-bottom:100px;
+    }
     .project1 a img, .project2 a img, .project3 a img, .project4 a img {
     /*max-height:400px;*/
     /*height:100%;*/
@@ -317,8 +321,11 @@ hr {
         /*display: inline-block;*/
         /*vertical-align: top;*/
         min-height:800px;
-        margin-bottom:300px;
+        margin-bottom:400px;
         width:90%;
+    }
+    .project4 {
+        margin-bottom:100px;
     }
     .project1 a img, .project2 a img, .project3 a img, .project4 a img {
     /*max-height:400px;*/
