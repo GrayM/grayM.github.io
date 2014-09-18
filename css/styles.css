@@ -90,6 +90,7 @@ hr {
     transform: translateX(-50%);
     left: 50%;
 }
+
 /*------------------LINKS-------------------------*/
 
 #about {
@@ -103,6 +104,9 @@ hr {
 }
 #git {
     padding-right: 30px;
+}
+.fa-tumblr-square {
+    padding-left:30px;
 }
 .main-header .fancybox p {
     font-size: .5em;
@@ -123,7 +127,7 @@ hr {
 
 .screenShots {
     overflow: scroll;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: RGBA(51, 51, 51, 1);
     display: block;
 }
 .screenShots p {
@@ -169,6 +173,33 @@ hr {
 
 .fa-lg {
     font-size: 1.8em;
+}
+.profile {
+    height:400px;
+    background-color:rgba(0,0,0,0);
+    text-align:center;
+    margin:0 auto;
+
+}
+.profile img {
+    height:300px;
+    width:300px;
+    border-radius:50%;
+    position: relative;
+    top: 30%;
+    transform: translateY(10%);
+}
+.profile p {
+    font-family: 'Titillium Web', sans-serif;
+    color:RGBA(0, 136, 204, 1);
+    font-size:2em;
+    position:relative;
+    bottom:-50px;
+
+}
+.bottom {
+    height:400px;
+    background-color: RGBA(51, 51, 51, 1);
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
