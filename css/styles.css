@@ -166,7 +166,7 @@ hr {
     .parallax {
         background-position: 60% 100%;
         /*max-height:100vh;*/
-        background-size:380px 100vh;
+        background-size:380px 960px;
         background-repeat:no-repeat;
     }
     .fa-4x {
