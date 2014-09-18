@@ -169,6 +169,10 @@ hr {
         background-size:380px 960px;
         background-repeat:no-repeat;
     }
+    .background {
+        height:960px;
+        width:380px;
+    }
     .fa-4x {
         font-size: 3em;
         transition:0s;
