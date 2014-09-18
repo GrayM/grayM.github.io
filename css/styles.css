@@ -164,7 +164,7 @@ hr {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .parallax {
-        background-position: 60% 100%;
+        background-position: center center;
         /*max-height:100vh;*/
         background-size:380px 960px;
         background-repeat:no-repeat;
