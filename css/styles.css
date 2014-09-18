@@ -42,15 +42,10 @@ body {
     z-index: 2;
     position: fixed;
 }
-.main-header img {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    left: 20px;
-    bottom: 5px;
-}
+
 .main-header .icons {
     position: absolute;
+    vertical-align:top;
     width: 100%;
     left: 30px;
     /*transition: 0s;*/
@@ -115,6 +110,10 @@ hr {
 .screenShots p {
     padding-top: 25px;
 }
+.screenShots a {
+    font-size:1.5em;
+    margin-bottom:100px;
+}
 /*.shrink {
     height:300px;
     overflow:hidden;
@@ -136,17 +135,22 @@ hr {
     z-index: 2;
 }
 .screenShots img {
-    max-width: 95%;
+    max-width: 80%;
 }
 .project1, .project2, .project3, .project4 {
     text-align: center;
     margin: 0 auto;
-    /*max-height:400px;*/
+    display:inline-block;
+    max-height:500px;
     overflow:hidden;
     margin-bottom: 70px;
     /*min-width:100%;*/
-    max-height:300px;
+    /*max-height:300px;*/
     
+}
+.project1 a, .project2 a, .project3 a, .project4 a {
+    /*display:inline-block;*/
+    font-size:1.5em;
 }
 .project1 a img, .project2 a img, .project3 a img, .project4 a img {
     /*max-height:400px;*/
@@ -156,7 +160,13 @@ hr {
     /*overflow:hidden;*/
     /*overflow:hidden;*/
     /*width:90%;*/
-}
+    /*width:100%;*/
+    /*display:inline-block;*/
+    /*min-height:600px;*/
+    /*margin-bottom:100px;*/
+    }
+
+
 .fa-lg {
     font-size: 1.8em;
 }
@@ -164,15 +174,14 @@ hr {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .parallax {
-        background-position: center top;
-        /*max-height:100vh;*/
-        background-size:380px 450px;
-        background-repeat:no-repeat;
+        position:absolute;
+        background-position: 60% 100%;
     }
-    .background {
-        height:380px;
-        /*width: 100vw;*/
-    }
+    .project1 a, .project2 a, .project3 a, .project4 a {
+    /*display:inline-block;*/
+    font-size:1em;
+}
+
     .fa-4x {
         font-size: 3em;
         transition:0s;
@@ -210,17 +219,37 @@ hr {
     .screenShots p {
         text-align: center;
     }
-    .project1, .project2, .project3, .project4 {
-        max-height:500px;
+    .project1 a img, .project2 a img, .project3 a img, .project4 a img {
+    /*max-height:400px;*/
+    /*height:100%;*/
+    /*height:100%;*/
+    /*min-width:90%;*/
+    /*overflow:hidden;*/
+    /*overflow:hidden;*/
+    /*width:90%;*/
+    width:70%;
+    /*min-height:600px;*/
+    margin-bottom:100px;
     }
+
 }
 @media screen and (min-width: 961px) {
     .project1, .project2, .project3, .project4 {
-        /*width: 49%;*/
-        display: inline-block;
-        overflow:hidden;
-        /*vertical-align: top;*/
+        min-height:600px;
+        margin-bottom:400px;
     }
+    .project1 a img, .project2 a img, .project3 a img, .project4 a img {
+    /*max-height:400px;*/
+    /*height:100%;*/
+    /*height:100%;*/
+    /*min-width:90%;*/
+    /*overflow:hidden;*/
+    /*overflow:hidden;*/
+    /*width:90%;*/
+    width:100%;
+    min-height:750px;
+    margin-bottom:100px;
+}
     .screenShots {
         margin: 0 auto;
         text-align: center;
@@ -252,11 +281,26 @@ hr {
         width: 70px;
     }
     .project1, .project2, .project3, .project4 {
-        width: 49%;
+        /*width: 49%;*/
         /*overflow:hidden;*/
         /*display: inline-block;*/
         /*vertical-align: top;*/
+        min-height:800px;
+        margin-bottom:300px;
+        width:90%;
     }
+    .project1 a img, .project2 a img, .project3 a img, .project4 a img {
+    /*max-height:400px;*/
+    /*height:100%;*/
+    /*height:100%;*/
+    /*min-width:90%;*/
+    /*overflow:hidden;*/
+    /*overflow:hidden;*/
+    /*width:90%;*/
+    /*width:1%;*/
+    /*height:100%;*/
+    margin-bottom:100px;
+}
     h2 {
         font-size: 5em;
         font-weight: 200;
@@ -265,9 +309,14 @@ hr {
         font-size: 2.4em;
         font-weight: 100;
     }
+
     .screenShots img {
         vertical-align: top;
-        height: 400px;
+        /*max-height:700px;*/
+        overflow:hidden;
+        width:100%;
+        margin-bottom:200px;
+        /*height: 400px;*/
     }
     /*.project1 a img, .project2 a img, .project3 a img, .project4 a img {
         max-height:700px;
@@ -275,8 +324,21 @@ hr {
 }
 @media screen and (min-width: 1480px) {
     .project1, .project2, .project3, .project4 {
-        width: 24%;
+        /*width: 24%;*/
+        width:80%;
     }
+    .project1 a img, .project2 a img, .project3 a img, .project4 a img {
+    /*max-height:400px;*/
+    /*height:100%;*/
+    /*height:100%;*/
+    /*min-width:90%;*/
+    /*overflow:hidden;*/
+    /*overflow:hidden;*/
+    /*width:90%;*/
+    width:80%;
+    min-height:750px;
+    margin-bottom:100px;
+}
     .main-header, .icons {
         padding-left: 70px;
     }
