@@ -41,6 +41,7 @@ body {
     left: 40px;
     z-index: 2;
     position: fixed;
+    transition: all .25s ease;
 }
 
 .main-header .icons {
