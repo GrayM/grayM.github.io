@@ -39,7 +39,7 @@ body {
 
     background: url('../images/beach.jpg');
 
-    background-position: 60% 80%;
+    /*background-position: 70% 30%;*/
 
     background-attachment: fixed;
 
@@ -139,6 +139,11 @@ hr {
 
     transform: translateY(-220px);
 
+}
+.iOSBackground {
+    background-width:640px;
+    background-height:960px;
+    background-position: 80% 0%;
 }
 
 .iconMove {
@@ -337,7 +342,7 @@ hr {
 
     height: 300px;
 
-    background-color: rgba(51, 51, 51, .7);
+    background-color: rgba(51, 51, 51, .8);
 
     text-align: center;
 
@@ -357,7 +362,7 @@ hr {
 
     position: relative;
 
-    bottom: -105px;
+    bottom: -100px;
 
 }
 
@@ -365,11 +370,12 @@ hr {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
 
+    
     .parallax {
 
         position: absolute;
 
-        background-position: 60% 100%;
+        background-position: 80% 100%;
 
     }
 
@@ -428,6 +434,10 @@ hr {
 }
 
 @media screen and (min-width: 768px) {
+
+    .parallax {
+        background-position:80% 0%;
+    }
 
     .grid {
 
@@ -524,6 +534,10 @@ hr {
 }
 
 @media screen and (min-width: 1024px) {
+
+    .parallax {
+        background-position:80% 0%;
+    }
 
     .main-header img {
 

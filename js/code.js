@@ -13,11 +13,10 @@ $(document).ready(function() {
 
     $(window).scroll(function() {
         var windowpos = $(window).scrollTop();
-
         var posh = h.position();
-
-
         var shouldSetSticky0 = windowpos >= posh.top + 650;
+        var device = navigator.userAgent.toLowerCase();
+        var ios = device.match(/(iphone|ipod|ipad)/);
 
         if (shouldSetSticky0 && !isSticking) {
             i.removeClass("icons");
@@ -32,25 +31,16 @@ $(document).ready(function() {
             h.removeClass("vanish");
             isSticking = false;
         }
+        if (ios) {
+        //ADD CLASSES HERE THAT WILL ONLY APPLY TO IOS
+        $(".parallax").addClass("iOSBackground");
+    }
 
     });
+
+
+    
+
+
 });
 
-function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
-
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
-
-          function startTimer() {
-              setInterval(displayNextImage, 3000);
-          }
-
-          var images = [], x = -1;
-          images[0] = "image1.jpg";
-          images[1] = "image2.jpg";
-          images[2] = "image3.jpg";
