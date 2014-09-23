@@ -141,6 +141,7 @@ hr {
 
 }
 .iOSBackground {
+    position:relative;
     background-width:640px;
     background-height:960px;
     background-position: 80% 0%;

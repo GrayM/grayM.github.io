@@ -1,8 +1,3 @@
-$(window).scroll(function() {
-    $(".main-header").css("top", Math.max(0, 250 - $(this).scrollTop()));
-
-});
-
 $(document).ready(function() {
 
     var h = $("h2, h4");
@@ -18,6 +13,10 @@ $(document).ready(function() {
             var shouldSetSticky0 = windowpos >= posh.top + 650;
             var device = navigator.userAgent.toLowerCase();
             var ios = device.match(/(iphone|ipod|ipad)/);
+            $(window).scroll(function() {
+                $(".main-header").css("top", Math.max(0, 250 - $(this).scrollTop()));
+
+            });
 
 
             if (shouldSetSticky0 && !isSticking) {
