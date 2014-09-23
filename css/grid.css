@@ -1,0 +1,26 @@
+.grid {
+	-webkit-column-count: 2;
+	column-count: 2;
+	column-gap:0px;
+	-webkit-column-gap:0px;
+	max-width:1200px;
+	margin:0 auto;
+
+}
+.project {
+	/*max-width:49%;*/
+	
+}
+
+.grid * img {
+	/*display:block;*/
+	max-width:100%;
+	max-height:auto;
+	/*margin:0 auto;*/
+
+}
+.description-box {
+	border:1px inset gray;
+	max-width:100%;
+	text-align:center;
+}

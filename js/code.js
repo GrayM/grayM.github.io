@@ -17,7 +17,7 @@ $(document).ready(function() {
         var posh = h.position();
 
 
-        var shouldSetSticky0 = windowpos >= posh.top + 700;
+        var shouldSetSticky0 = windowpos >= posh.top + 650;
 
         if (shouldSetSticky0 && !isSticking) {
             i.removeClass("icons");
@@ -35,3 +35,22 @@ $(document).ready(function() {
 
     });
 });
+
+function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "image1.jpg";
+          images[1] = "image2.jpg";
+          images[2] = "image3.jpg";
