@@ -175,6 +175,7 @@ hr {
 .iosIcons {
     text-align:middle;
     display:inline-block;
+    padding-right:0px;
 }
 
 .fa-angle-double-down {
