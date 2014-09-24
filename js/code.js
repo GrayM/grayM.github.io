@@ -5,14 +5,21 @@ $(document).ready(function() {
     var b = $(".fa-angle-double-down");
     var is_touch_device = 'ontouchstart' in document.documentElement;
     var isSticking = false;
+    var ios = device.match(/(iphone|ipod|ipad)/);
 
+    if (ios) {
+        //ADD CLASSES HERE THAT WILL ONLY APPLY TO IOS
+        $(".parallax").addClass("iOSBackground");
+        $(".iconMove").addClass("iosIcons");
+        h.addClass("mobile-header");
+    }
     if (!is_touch_device) {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
             var posh = h.position();
             var shouldSetSticky0 = windowpos >= posh.top + 650;
             var device = navigator.userAgent.toLowerCase();
-            var ios = device.match(/(iphone|ipod|ipad)/);
+
 
             $(".main-header").css("top", Math.max(0, 250 - $(this).scrollTop()));
 
@@ -32,12 +39,7 @@ $(document).ready(function() {
                 h.removeClass("vanish");
                 isSticking = false;
             }
-            if (ios) {
-                //ADD CLASSES HERE THAT WILL ONLY APPLY TO IOS
-                $(".parallax").addClass("iOSBackground");
-                $(".iconMove").addClass("iosIcons");
-                h.addClass("mobile-header");
-            }
+
 
         });
     }
