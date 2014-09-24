@@ -4,8 +4,8 @@ $(document).ready(function() {
     var i = $(".icons");
     var b = $(".fa-angle-double-down");
     var is_touch_device = 'ontouchstart' in document.documentElement;
-
     var isSticking = false;
+
     if (!is_touch_device) {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
@@ -13,10 +13,10 @@ $(document).ready(function() {
             var shouldSetSticky0 = windowpos >= posh.top + 650;
             var device = navigator.userAgent.toLowerCase();
             var ios = device.match(/(iphone|ipod|ipad)/);
-            $(window).scroll(function() {
-                $(".main-header").css("top", Math.max(0, 250 - $(this).scrollTop()));
 
-            });
+            $(".main-header").css("top", Math.max(0, 250 - $(this).scrollTop()));
+
+
 
 
             if (shouldSetSticky0 && !isSticking) {
