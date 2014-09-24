@@ -13,7 +13,7 @@ $(document).ready(function() {
         $(".iconMove").addClass("iosIcons");
         h.addClass("mobile-header");
     }
-    if (!is_touch_device) {
+    if (is_touch_device) {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
             var posh = h.position();
