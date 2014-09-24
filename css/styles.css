@@ -277,10 +277,20 @@ hr {
 
 }
 
+
+
 .project-container {
 
     background-color: white;
 
+
+}
+.project-container1 {
+    padding-bottom:75px;
+}
+.project-container2 {
+    padding-top:75px;
+    padding-bottom:60px;
 }
 
 .grid * img {
@@ -351,7 +361,7 @@ hr {
 
 .profile {
 
-    height: 300px;
+    height: 200px;
 
     background-color: rgba(51, 51, 51, .8);
 
@@ -373,7 +383,7 @@ hr {
 
     position: relative;
 
-    bottom: -100px;
+    bottom: -75px;
 
 }
 
