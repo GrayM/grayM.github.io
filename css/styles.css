@@ -95,7 +95,7 @@ body {
 
     width: 100%;
 
-    left: 30px;
+    left: 25px;
 
     /*transition: 0s;*/
 
@@ -144,7 +144,7 @@ hr {
     position:relative;
     background-width:640px;
     background-height:960px;
-    background-position: 80% 0%;
+    background-position: center-center;
 }
 
 .iconMove {
@@ -176,6 +176,9 @@ hr {
     text-align:middle;
     display:inline-block;
     padding-right:0px;
+}
+.mobile-header {
+    position:relative;
 }
 
 .fa-angle-double-down {

@@ -36,6 +36,7 @@ $(document).ready(function() {
                 //ADD CLASSES HERE THAT WILL ONLY APPLY TO IOS
                 $(".parallax").addClass("iOSBackground");
                 $(".iconMove").addClass("iosIcons");
+                h.addClass("mobile-header");
             }
 
         });
