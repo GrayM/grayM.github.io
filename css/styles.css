@@ -343,16 +343,11 @@ hr {
 
     overflow: hidden;
 
-    /*padding-top:50px;*/
-
-    /*margin-bottom: 70px;*/
-
-    /*min-width:100%;*/
-
-    /*max-height:300px;*/
-
 }
 
+#build {
+    color:rgba(8,8,8,.5);
+}
 .fa-lg {
 
     font-size: 1.8em;
