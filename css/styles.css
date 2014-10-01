@@ -9,22 +9,6 @@
 
 }
 
-@font-face {
-
-    font-family: Anglo;
-
-    src: url(../fonts/ICE-CS.ttf);
-
-}
-
-@font-face {
-
-    font-family: JustDieAlready;
-
-    src: url(../fonts/JustDieAlready.ttf);
-
-}
-
 body {
 
     padding: 0;
@@ -62,7 +46,13 @@ body {
     height: 100vh;
 
 }
-
+.bio {
+    max-width:800px;
+    position:absolute;
+    top:600px;
+    left:150px;
+    font-family: 'Titillium Web', sans-serif;
+}
 .main-header {
 
     width: 100%;
@@ -195,6 +185,10 @@ hr {
 
     left: 50%;
 
+}
+
+.visible {
+    display:hidden;
 }
 
 /*------------------LINKS-------------------------*/
