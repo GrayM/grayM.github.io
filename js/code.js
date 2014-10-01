@@ -47,7 +47,7 @@ $(document).ready(function() {
     var b = $(".fa-angle-double-down");
     var is_touch_device = 'ontouchstart' in document.documentElement;
     var isSticking = false;
-    
+
     if (!is_touch_device) {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
@@ -59,6 +59,25 @@ $(document).ready(function() {
             $(".main-header").css("top", Math.max(0, 250 - $(this).scrollTop()));
 
 
+            if (jQuery(this).scrollTop() > 90) {
+
+                if (jQuery('#desc').hasClass('visible') == false) {
+                    
+                    jQuery('#desc').stop().animate({
+                        right: '0px'
+                    }, function() {
+                        jQuery('#desc').addClass('visible')
+                    });
+                }
+            } else {
+                if (jQuery('#desc').hasClass('visible') == true) {
+                    jQuery('#desc').stop().animate({
+                        right: '-300px'
+                    }, function() {
+                        jQuery('#desc').removeClass('visible')
+                    });
+                }
+            }
 
 
             if (shouldSetSticky0 && !isSticking) {
@@ -75,11 +94,10 @@ $(document).ready(function() {
                 isSticking = false;
             }
 
-            
+
 
         });
     }
-    
 
 
 
