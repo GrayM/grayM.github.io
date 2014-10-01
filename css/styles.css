@@ -88,8 +88,6 @@ body {
 
     left: 25px;
 
-    /*transition: 0s;*/
-
 }
 
 span {
@@ -453,19 +451,21 @@ hr {
 
     .grid {
 
-        -webkit-column-count: 1;
+        -webkit-column-count: 2;
 
-        column-count: 1;
+        column-count: 2;
 
         column-gap: 0px;
 
         -webkit-column-gap: 0px;
 
-        max-width: 800px;
+        max-width: 90%;
 
         margin: 0 auto;
 
         background-color: white;
+
+        overflow:scroll;
 
     }
 
@@ -509,7 +509,7 @@ hr {
 
         -webkit-column-gap: 0px;
 
-        max-width: 1200px;
+        max-width: 90%;
 
         margin: 0 auto;
 
@@ -558,6 +558,9 @@ hr {
         width: 70px;
 
     }
+    .grid {
+        max-width:80%;
+    }
 
     h2 {
 
@@ -589,6 +592,9 @@ hr {
 
             width: 80px;
 
+        }
+        .grid {
+            max-width:70%;
         }
 
         h2 {
