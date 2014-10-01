@@ -249,7 +249,8 @@ hr {
 .grid {
 
     -webkit-column-count: 2;
-
+    
+    -moz-column-count:2;
     column-count: 2;
 
     column-gap: 0px;
@@ -328,7 +329,7 @@ hr {
 
     display: inline-block;
 
-    max-height: auto;
+    min-height:auto;
 
     overflow: hidden;
 
@@ -400,7 +401,7 @@ hr {
     .grid {
 
         -webkit-column-count: 1;
-
+        -moz-column-count:1;
         column-count: 1;
 
         column-gap: 0px;
@@ -452,7 +453,7 @@ hr {
     .grid {
 
         -webkit-column-count: 2;
-
+        -moz-column-count:2;
         column-count: 2;
 
         column-gap: 0px;
@@ -465,7 +466,7 @@ hr {
 
         background-color: white;
 
-        overflow:scroll;
+        
 
     }
 
@@ -502,7 +503,7 @@ hr {
     .grid {
 
         -webkit-column-count: 2;
-
+        -moz-column-count:2;
         column-count: 2;
 
         column-gap: 0px;
