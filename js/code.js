@@ -72,7 +72,7 @@ $(document).ready(function() {
             } else {
                 if (jQuery('#desc').hasClass('visible') == true) {
                     jQuery('#desc').stop().animate({
-                        right: '-300px'
+                        right: '50%'
                     }, function() {
                         jQuery('#desc').removeClass('visible')
                     });
