@@ -49,8 +49,8 @@ body {
 .bio {
     max-width:500px;
     position:absolute;
-    top:600px;
-    left:150px;
+    top:550px;
+    left:35px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -374,7 +374,7 @@ hr {
 
 /*----------------------RESPONSIVENESS-----------------------*/
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 710px) {
 
     .main-header {
         left:3px;
@@ -408,10 +408,13 @@ hr {
 
         -webkit-column-gap: 0px;
 
-        max-width: 1200px;
+        max-width: 90%;
 
         background-color: white;
 
+    }
+    .project {
+        margin-bottom:50px;
     }
 
     .fa-4x {
@@ -443,8 +446,16 @@ hr {
     }
 
 }
+@media screen and (min-width: 711px) and (max-width: 1516px) {
+    .main-header {
+        left:20px;
+    }
+    .main-header h2 {
+        font-size:3em;
+    }
 
-@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 854px) {
 
     .parallax {
         background-position:80% 0%;
@@ -497,8 +508,71 @@ hr {
     }
 
 }
+@media screen and (min-width:1422px) {
+    .bio {
+        left:450px;
+    }
+    .main-header h2 {
+        font-size:5em;
+    }
+    .main-header {
+        left:60px;
+    }
+}
+@media screen and (min-width: 1517px) {
+    .grid {
 
-@media screen and (min-width: 990px) {
+
+
+        max-width: 80%;
+
+        margin: 0 auto;
+
+        padding: 5px 0;
+
+        background-color: white;
+
+    }
+    h2 {
+
+        font-size: 4.8em;
+
+        font-weight: 200;
+
+    }
+
+    h4 {
+
+        font-size: 2.3em;
+
+        font-weight: 100;
+
+    }
+
+    .main-header img {
+
+        height: 60px;
+
+        width: 60px;
+
+    }
+
+    .bio {
+        left:500px;
+        top:500px;
+    }
+
+}
+@media screen and (min-width:1800px) {
+    .main-header h2 {
+        font-size:6em;
+    }
+    .main-hader .icons {
+        left:200px;
+    }
+    
+}
+/*@media screen and (min-width: 990px) {
 
     .grid {
 
@@ -546,7 +620,7 @@ hr {
 
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1137px) {
 
     .parallax {
         background-position:80% 0%;
@@ -617,3 +691,4 @@ hr {
         }
 
     }
+*/
