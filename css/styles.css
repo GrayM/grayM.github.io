@@ -54,6 +54,22 @@ body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+.bio h1:first-letter {
+    font-family: Times, Times New Roman, Tahoma;
+    font-size: 36pt;
+    float: left;
+    letter-spacing:10px;
+    color:RGBA(38, 131, 177, 1)
+}
+#oo {
+    color:RGBA(38, 131, 177, 1);
+    font-size:inherit;
+}
+#bio {
+    font-size:15pt;
+    letter-spacing:2px;
+    line-height:1.2em;
+}
 .main-header {
 
     width: 100%;
@@ -508,9 +524,12 @@ hr {
     }
 
 }
+
 @media screen and (min-width:1422px) {
     .bio {
         left:450px;
+        top:450px;
+        max-width:750px;
     }
     .main-header h2 {
         font-size:5em;
@@ -570,7 +589,10 @@ hr {
     .main-hader .icons {
         left:200px;
     }
-    
+    .bio {
+        top:650px;
+    }
+
 }
 /*@media screen and (min-width: 990px) {
 
