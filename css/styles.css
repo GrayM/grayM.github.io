@@ -50,6 +50,7 @@ body {
     max-width:500px;
     position:absolute;
     top:550px;
+    -moz-top:350px;
     left:35px;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -430,7 +431,7 @@ hr {
     .grid {
 
         -webkit-column-count: 1;
-        -moz-column-count:1;
+        -moz-column-count:2;
         column-count: 1;
 
         column-gap: 0px;
