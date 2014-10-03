@@ -344,7 +344,7 @@ hr {
 
     margin: 0 auto;
 
-    display: inline-block;
+    /*display: inline-block;*/
 
     min-height:auto;
 
