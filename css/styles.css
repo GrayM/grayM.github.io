@@ -49,9 +49,8 @@ body {
 .bio {
     max-width:500px;
     position:absolute;
-    top:550px;
-    -moz-top:350px;
-    left:35px;
+    top:400px;
+    left:45px;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -400,7 +399,7 @@ hr {
 
     }
     .bio {
-        top:230px;
+        top:550px;
         left:10px;
     }
     .bio h1 {
@@ -484,6 +483,11 @@ hr {
     .main-header h2 {
         font-size:4em;
     }
+    .parallax {
+
+        background-position: 80% 100%;
+
+    }
     
 }
 @media screen and (min-width: 854px) {
@@ -543,7 +547,7 @@ hr {
 @media screen and (min-width:1422px) {
     .bio {
         left:25%;
-        top:600px;
+        top:450px;
         max-width:55%;
     }
     .main-header h2 {
@@ -593,7 +597,7 @@ hr {
 
     .bio {
         left:25%;
-        top:500px;
+        /*top:500px;*/
         max-width:50%;
     }
 
@@ -609,6 +613,13 @@ hr {
         top:650px;
     }
 
+}
+
+@-moz-document url-prefix() {       
+    .bio {
+        top:425px;
+        left:300px;
+    }
 }
 /*@media screen and (min-width: 990px) {
 

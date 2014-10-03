@@ -52,7 +52,7 @@ $(document).ready(function() {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
             var posh = h.position();
-            var shouldSetSticky0 = windowpos >= posh.top + 400;
+            var shouldSetSticky0 = windowpos >= posh.top + 425;
             var device = navigator.userAgent.toLowerCase();
             var ios = device.match(/(iphone|ipod|ipad)/);
 
