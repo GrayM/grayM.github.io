@@ -269,7 +269,8 @@ hr {
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
-@media screen and (min-width: 320px) and (max-width: 710px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    
     .main-header {
         left: 5px;
         /*top: 50px;*/
@@ -296,9 +297,6 @@ hr {
     .icons img {
         max-width: 35px;
         max-height: 35px;
-    }
-    .iconMove {
-        padding-right:3px;
     }
     .grid {
         -webkit-column-count: 1;
@@ -327,7 +325,24 @@ hr {
         font-size: 1.5em;
     }
 }
-@media screen and (min-width: 711px) and (max-width: 1516px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /*.main-header {
+        left: 25px;
+        top: 50px;
+        width: 400px;
+    }*/
+    /*.bubble {
+        top: 500px;
+        left: 10px;
+    }*/
+    /*.bubble h1 {
+        font-size: 1.8em;
+        line-height: 30px;
+    }*/
+    #bio {
+        font-size: 1.3em;
+        line-height: 18px;
+    }
     .main-header {
         left: 20px;
         top: 150px;
@@ -375,7 +390,7 @@ hr {
         top:475px;
     }
 }
-@media screen and (min-width: 1160px) {
+@media screen and (min-width: 1025px) {
     .bubble {
         left:40%;
     }
