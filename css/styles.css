@@ -276,8 +276,9 @@ hr {
         width: 100%;
     }
     .bubble {
-        top: 200px;
+        top: 225px;
         left: 5px;
+        padding:30px 20px;
     }
     .bubble h1 {
         font-size: 1.8em;
@@ -285,7 +286,8 @@ hr {
     }
     #bio {
         font-size: 1em;
-        line-height: 12px;
+        line-height: 14px;
+        letter-spacing:1.2px;
     }
     .parallax {
         position: absolute;
