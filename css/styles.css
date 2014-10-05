@@ -69,7 +69,7 @@ body {
   border-radius:30px;
 }
 
-/* creates the smaller circle */
+
 .bubble:after {
   content:"";
   position:absolute;
@@ -78,20 +78,12 @@ body {
   width:15px;
   height:15px;
   background:#075698;
-  /* css3 */
   -webkit-border-radius:15px;
   -moz-border-radius:15px;
   border-radius:15px;
 }
-/*.bubble h1:first-letter {
-    font-family: Times, Times New Roman, Tahoma;
-    font-size: 36pt;
-    float: left;
-    letter-spacing: 10px;
-    color: RGBA(38, 131, 177, 1)
-}*/
+
 #oo {
-    /*color: RGBA(38, 131, 177, 1);*/
     font-size: inherit;
 }
 #bio {
@@ -155,7 +147,6 @@ hr {
     background-color: RGBA(0, 0, 35, 1);
     width: 100%;
     display: inline-block;
-    /*transition: 0s;*/
 }
 .iosIcons {
     text-align: middle;
@@ -344,7 +335,7 @@ hr {
     }
     .bubble {
         top:490px;
-        left:20%;
+        left:19%;
     }
 }
 @media screen and (min-width: 854px) {
@@ -439,127 +430,6 @@ hr {
 }
 @-moz-document url-prefix() {
     .bubble {
-        top: 425px;
-        left: 300px;
+        top: 400px;
     }
 }
-/*@media screen and (min-width: 990px) {
-
-    .grid {
-
-        -webkit-column-count: 2;
-        -moz-column-count:2;
-        column-count: 2;
-
-        column-gap: 0px;
-
-        -webkit-column-gap: 0px;
-
-        max-width: 90%;
-
-        margin: 0 auto;
-
-        padding: 5px 0;
-
-        background-color: white;
-
-    }
-
-    h2 {
-
-        font-size: 4.8em;
-
-        font-weight: 200;
-
-    }
-
-    h4 {
-
-        font-size: 2.3em;
-
-        font-weight: 100;
-
-    }
-
-    .main-header img {
-
-        height: 60px;
-
-        width: 60px;
-
-    }
-
-}
-
-@media screen and (min-width: 1137px) {
-
-    .parallax {
-        background-position:80% 0%;
-    }
-
-    .main-header img {
-
-        height: 70px;
-
-        width: 70px;
-
-    }
-    .grid {
-        max-width:80%;
-    }
-
-    h2 {
-
-        font-size: 5em;
-
-        font-weight: 200;
-
-    }
-
-    h4 {
-
-        font-size: 2.4em;
-
-        font-weight: 100;
-
-    }
-
-    @media screen and (min-width: 1480px) {
-
-        .main-header, .icons {
-
-            padding-left: 70px;
-
-        }
-
-        .main-header img {
-
-            height: 80px;
-
-            width: 80px;
-
-        }
-        .grid {
-            max-width:70%;
-        }
-
-        h2 {
-
-            font-size: 6em;
-
-            font-weight: 200;
-
-        }
-
-        h4 {
-
-            font-size: 2.5em;
-
-            font-weight: 100;
-
-            margin-bottom: 50px;
-
-        }
-
-    }
-*/
