@@ -24,6 +24,10 @@ body {
     opacity: .7;
     height: 100vh;
 }
+.project a {
+    color:RGBA(0, 06, 74, 1);
+    text-decoration:underline;
+}
 .bubble {
     max-width: 500px;
     position: absolute;
@@ -91,7 +95,7 @@ body {
     position: absolute;
     font-family: 'Titillium Web', sans-serif;
     text-align: left;
-    top: 50px;
+    top: 150px;
     left: 40px;
     z-index: 2;
     position: fixed;
@@ -118,6 +122,8 @@ h4 {
 }
 hr {
     margin: 0;
+    border-top:1px solid silver;
+    border-bottom:1px solid RGBA(0, 0, 35, 1);
 }
 /*-----------------dynamic JS classes------------*/
 
@@ -152,11 +158,12 @@ hr {
 }
 .fa-angle-double-down {
     position: fixed;
-    bottom: 20px;
+    bottom: -10px;
     margin: 0 auto;
     text-align: middle;
     transform: translateX(-50%);
     left: 50%;
+    font-size:4em;
 }
 /*------------------LINKS-------------------------*/
 
@@ -201,17 +208,17 @@ hr {
     max-width: 1220px;
     padding-top: 50px;
     margin: 0 auto;
-    background-color: white;
+    background-color: RGBA(41, 132, 175, 1);
 }
 .project-container {
-    background-color: white;
+    background-color: RGBA(41, 132, 175, 1);
 }
 .project-container1 {
     padding-bottom: 75px;
 }
 .project-container2 {
     padding-top: 75px;
-    padding-bottom: 60px;
+    padding-bottom: 100px;
 }
 .grid * img {
     /*display:block;*/
@@ -222,7 +229,7 @@ hr {
     /*margin:0 auto;*/
 }
 .description-box {
-    border: 1px inset gray;
+    /*border: 1px inset gray;*/
     max-width: 100%;
     min-height: 100px;
     text-align: center;
@@ -232,15 +239,16 @@ hr {
     width: 100%;
     text-align: center;
     margin: 0;
+    font-size:2.75em;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration:underline;
+    margin-bottom:75px;
 }
 .project {
     text-align: center;
     margin: 0 auto;
-    /*display: inline-block;*/
-    
-    min-height: auto;
-    overflow: hidden;
 }
+
 #build {
     color: rgba(8, 8, 8, .5);
 }
@@ -260,13 +268,14 @@ hr {
     line-height: 50px;
     position: relative;
     bottom: -75px;
+    font-style:oblique;
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
-@media screen and (min-width: 320px) and (max-width: 600px) {
+@media screen and (min-width: 0px) and (max-width: 600px) {
     .main-header {
         left: 5px;
-        /*top: 50px;*/
+        top: 50px;
         
         width: 100%;
     }
@@ -299,7 +308,7 @@ hr {
         column-gap: 0px;
         -webkit-column-gap: 0px;
         max-width: 90%;
-        background-color: white;
+        background-color: RGBA(41, 132, 175, 1);
     }
     .project {
         margin-bottom: 50px;
@@ -312,8 +321,10 @@ hr {
         font-size: 1.3em;
         transition: 0s;
     }
-    h2 {
+    .main-header h2 {
         font-size: 3.5em;
+        text-shadow:4px 4px 4px RGBA(41, 132, 175, 1);
+        font-style:oblique;
     }
     h4 {
         font-size: 1.5em;
@@ -321,28 +332,27 @@ hr {
 }
 @media screen and (min-width: 601px) {
     .bubble {
-        top: 450px;
+        top: 420px;
         left: 5px;
         padding: 40px 40px;
     }
     .parallax {
         background-position: 80% 100%;
     }
+    .main-header h2 {
+        font-size:3.75em;
+        text-shadow:5px 0px 5px RGBA(41, 132, 175, 1);
+        font-style:oblique;
+
+    }
+    .main-header {
+        top:50px;
+    }
+    .project-container2 {
+        padding-bottom:325px;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /*.main-header {
-        left: 25px;
-        top: 50px;
-        width: 400px;
-    }*/
-    /*.bubble {
-        top: 500px;
-        left: 10px;
-    }*/
-    /*.bubble h1 {
-        font-size: 1.8em;
-        line-height: 30px;
-    }*/
     
     #bio {
         font-size: 1.3em;
@@ -359,8 +369,11 @@ hr {
         background-position: 80% 100%;
     }
     .bubble {
-        top: 490px;
+        top: 425px;
         left: 19%;
+    }
+    .project-container2 {
+        padding-bottom:295px;
     }
 }
 @media screen and (min-width: 854px) {
@@ -375,7 +388,6 @@ hr {
         -webkit-column-gap: 0px;
         max-width: 90%;
         margin: 0 auto;
-        background-color: white;
     }
     h2 {
         font-size: 3.8em;
@@ -391,19 +403,26 @@ hr {
         transition: 0s;
     }
     .bubble {
-        left: 28%;
-        top: 475px;
+        left: 25%;
+        top: 450px;
+    }
+    .project-container2 {
+        padding-bottom:295px;
     }
 }
 @media screen and (min-width: 1025px) {
     .bubble {
-        left: 40%;
+        left: 35%;
+        top:425px;
+    }
+    .project-container2 {
+        padding-bottom:255px;
     }
 }
 @media screen and (min-width: 1422px) {
     .bubble {
         left: 45%;
-        top: 450px;
+        top: 400px;
         /*max-width: 55%;*/
     }
     .main-header h2 {
@@ -412,13 +431,15 @@ hr {
     .main-header {
         left: 60px;
     }
+    .project-container2 {
+        padding-bottom:160px;
+    }
 }
 @media screen and (min-width: 1517px) {
     .grid {
         max-width: 80%;
         margin: 0 auto;
         padding: 5px 0;
-        background-color: white;
     }
     h2 {
         font-size: 4.8em;
@@ -433,21 +454,22 @@ hr {
         width: 60px;
     }
     .bubble {
-        left: 47%;
+        left: 49%;
+        top:370px;
         /*top:500px;*/
         /*max-width: 50%;*/
+    }
+    .project-container2 {
+        padding-bottom:215px;
     }
 }
 @media screen and (min-width: 1800px) {
     .main-header h2 {
         font-size: 6em;
     }
-    .main-hader .icons {
-        left: 200px;
-    }
     .bubble {
         left: 50%;
-        top: 500px;
+        top: 400px;
     }
 }
 @-moz-document url-prefix() {
