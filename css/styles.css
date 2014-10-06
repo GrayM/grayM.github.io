@@ -25,8 +25,8 @@ body {
     height: 100vh;
 }
 .project a {
-    color:RGBA(0, 206, 274, 1);
-    text-decoration:underline;
+    color: RGBA(0, 206, 274, 1);
+    text-decoration: underline;
 }
 .bubble {
     max-width: 500px;
@@ -122,8 +122,8 @@ h4 {
 }
 hr {
     margin: 0;
-    border-top:1px solid silver;
-    border-bottom:1px solid RGBA(0, 0, 35, 1);
+    border-top: 1px solid silver;
+    border-bottom: 1px solid RGBA(0, 0, 35, 1);
 }
 /*-----------------dynamic JS classes------------*/
 
@@ -163,7 +163,7 @@ hr {
     text-align: middle;
     transform: translateX(-50%);
     left: 50%;
-    font-size:4em;
+    font-size: 4em;
 }
 /*------------------LINKS-------------------------*/
 
@@ -192,7 +192,6 @@ hr {
     font-size: 1.5em;
     margin-bottom: 100px;
 }
-
 /*----------------------BOTTOM CONTENT----------------------*/
 
 .grid {
@@ -208,10 +207,10 @@ hr {
 }
 .project-container {
     /*background-color: RGBA(41, 132, 175, 1);*/
-    background:url("https://c2.staticflickr.com/6/5266/5865043287_fb5d3782d1_z.jpg");
-    background-position:center center;
-    background-size:cover;
-
+    
+    background: url("https://c2.staticflickr.com/6/5266/5865043287_fb5d3782d1_z.jpg");
+    background-position: center center;
+    background-size: cover;
 }
 .project-container1 {
     padding-bottom: 75px;
@@ -230,44 +229,43 @@ hr {
 }
 .description-box {
     /*border: 1px inset gray;*/
+    
     max-width: 100%;
     min-height: 400px;
     text-align: center;
-
 }
-
 .project-p {
     padding-top: 50px;
     width: 100%;
     text-align: center;
     margin: 0;
-    font-size:2.75em;
+    font-size: 2.75em;
     font-family: 'Titillium Web', sans-serif;
-    text-decoration:underline;
-    margin-bottom:75px;
+    text-decoration: underline;
+    margin-bottom: 75px;
 }
 .project {
     text-align: center;
     margin: 0 auto;
-    max-height:500px;
+    max-height: 500px;
 }
 .project a {
-    color:RGBA(0, 75, 195, 1);
-    text-decoration:underline;
+    color: RGBA(0, 75, 195, 1);
+    text-decoration: underline;
 }
-
 h3 {
     /*color:RGBA(148, 204, 243, 1);*/
-    color:#ddd;
-    text-shadow:0px 4px 4px black;
+    
+    color: #ddd;
+    text-shadow: 0px 4px 4px black;
 }
 #build {
-    color: RGBA(190,190,190, .7);
+    color: RGBA(190, 190, 190, .7);
 }
 h5 {
-    color:RGBA(0, 176, 244, 1);
-    font-size:1.5em;
-    line-height:25px;
+    color: RGBA(0, 176, 244, 1);
+    font-size: 1.5em;
+    line-height: 25px;
 }
 .fa-lg {
     font-size: 1.8em;
@@ -277,7 +275,7 @@ h5 {
     background-color: rgba(51, 51, 51, .8);
     text-align: center;
     margin: 0 auto;
-    text-shadow:4px 0px 4px black
+    text-shadow: 4px 0px 4px black
 }
 .profile p {
     font-family: 'Titillium Web', sans-serif;
@@ -286,19 +284,29 @@ h5 {
     line-height: 50px;
     position: relative;
     bottom: -75px;
-    font-style:oblique;
+    font-style: oblique;
 }
 /*----------------------RESPONSIVENESS-----------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
+    .parallax {
+        background: url('../images/beach.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        height: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
     .main-header {
         left: 5px;
         top: 50px;
-        
         width: 100%;
     }
     .profile p {
-        bottom:-45px;
+        bottom: -45px;
     }
     .bubble {
         top: 225px;
@@ -335,7 +343,7 @@ h5 {
         margin-bottom: 250px;
     }
     .project:nth-of-type(2) {
-        margin-bottom:80px;
+        margin-bottom: 80px;
     }
     .fa-4x {
         font-size: 3em;
@@ -347,19 +355,30 @@ h5 {
     }
     .main-header h2 {
         font-size: 3.5em;
-        text-shadow:4px 4px 4px RGBA(41, 132, 175, 1);
-        font-style:oblique;
+        text-shadow: 4px 4px 4px RGBA(41, 132, 175, 1);
+        font-style: oblique;
     }
     h4 {
         font-size: 1.5em;
     }
     @-moz-document url-prefix() {
-    .bubble {
-        top: 400px;
+        .bubble {
+            top: 400px;
+        }
     }
 }
-}
 @media screen and (min-width: 601px) {
+    .parallax {
+        background: url('../images/beach.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        height: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
     .bubble {
         top: 430px;
         left: 5px;
@@ -369,20 +388,29 @@ h5 {
         background-position: 80% 100%;
     }
     .main-header h2 {
-        font-size:3.75em;
-        text-shadow:5px 0px 5px RGBA(41, 132, 175, 1);
-        font-style:oblique;
-
+        font-size: 3.75em;
+        text-shadow: 5px 0px 5px RGBA(41, 132, 175, 1);
+        font-style: oblique;
     }
     .main-header {
-        top:50px;
+        top: 50px;
     }
     .project-container2 {
-        padding-bottom:120px;
+        padding-bottom: 120px;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    
+    .parallax {
+        background: url('../images/beach.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
+    }
+    body {
+        height: 100%;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
     #bio {
         font-size: 1.3em;
         line-height: 18px;
@@ -402,12 +430,11 @@ h5 {
         left: 19%;
     }
     .project-container1 {
-        margin-bottom:0px;
+        margin-bottom: 0px;
     }
     .project-container2 {
-        padding-bottom:90px;
+        padding-bottom: 90px;
     }
-
 }
 @media screen and (min-width: 854px) {
     .parallax {
@@ -440,27 +467,24 @@ h5 {
         top: 450px;
     }
     .project-container2 {
-        padding-bottom:90px;
-        padding-top:100px;
+        padding-bottom: 90px;
+        padding-top: 100px;
     }
 }
 @media screen and (min-width: 1025px) {
     .bubble {
         left: 35%;
-        top:425px;
+        top: 425px;
     }
     .project-container2 {
-        padding-bottom:40px;
-        padding-top:100px;
+        padding-bottom: 40px;
+        padding-top: 100px;
     }
-
 }
 @media screen and (min-width: 1225px) {
-
     .project-container2 {
-        padding-bottom:0px;
+        padding-bottom: 0px;
     }
-
 }
 @media screen and (min-width: 1422px) {
     .bubble {
@@ -475,10 +499,8 @@ h5 {
         left: 60px;
     }
     .project-container2 {
-        padding-top:200px;
+        padding-top: 200px;
     }
-
-
 }
 @media screen and (min-width: 1517px) {
     .grid {
@@ -500,7 +522,7 @@ h5 {
     }
     .bubble {
         left: 49%;
-        top:370px;
+        top: 370px;
         /*top:500px;*/
         /*max-width: 50%;*/
     }
