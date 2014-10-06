@@ -289,17 +289,6 @@ h5 {
 /*----------------------RESPONSIVENESS-----------------------*/
 
 @media screen and (min-width: 0px) and (max-width: 600px) {
-    .parallax {
-        background: url('../images/beach.jpg') no-repeat center center fixed;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-    }
-    body {
-        height: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
     .main-header {
         left: 5px;
         top: 50px;
@@ -368,17 +357,6 @@ h5 {
     }
 }
 @media screen and (min-width: 601px) {
-    .parallax {
-        background: url('../images/beach.jpg') no-repeat center center fixed;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-    }
-    body {
-        height: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
     .bubble {
         top: 430px;
         left: 5px;
@@ -400,8 +378,8 @@ h5 {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .parallax {
-        background: url('../images/beach.jpg') no-repeat center center fixed;
+    html {
+        background: url(../images/beach.jpg) no-repeat center center fixed;
         background-size: cover;
         height: 100%;
         overflow: hidden;
@@ -410,6 +388,9 @@ h5 {
         height: 100%;
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
+    }
+    .parallax {
+        display:hidden;
     }
     #bio {
         font-size: 1.3em;
