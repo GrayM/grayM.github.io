@@ -8,15 +8,15 @@ $(document).ready(function() {
     var b = $(".fa-angle-double-down");
     var is_touch_device = 'ontouchstart' in document.documentElement;
     var isSticking = false;
-    var ios = device.match(/(iphone|ipod|ipad)/);
+    var ios = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
-    if (!is_touch_device && !ios) {
+    if (!ios) {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
             var posh = h.position();
             var shouldSetSticky0 = windowpos >= posh.top + 270;
             var device = navigator.userAgent.toLowerCase();
-            var ios = device.match(/(iphone|ipod|ipad)/);
+            var ios = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
             $(".main-header").css("top", Math.max(0, 200 - $(this).scrollTop() - 50));
 
