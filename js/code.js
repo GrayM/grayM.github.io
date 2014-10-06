@@ -9,7 +9,7 @@ $(document).ready(function() {
     var is_touch_device = 'ontouchstart' in document.documentElement;
     var isSticking = false;
 
-    if (!is_touch_device) {
+    // if (!is_touch_device) {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
             var posh = h.position();
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 
         });
-    }
+    // }
 
 
 
