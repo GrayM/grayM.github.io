@@ -8,8 +8,9 @@ $(document).ready(function() {
     var b = $(".fa-angle-double-down");
     var is_touch_device = 'ontouchstart' in document.documentElement;
     var isSticking = false;
+    var ios = device.match(/(iphone|ipod|ipad)/);
 
-    if (!is_touch_device) {
+    if (!is_touch_device && !ios) {
         $(window).scroll(function() {
             var windowpos = $(window).scrollTop();
             var posh = h.position();
