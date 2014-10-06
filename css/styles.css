@@ -297,6 +297,9 @@ h5 {
         
         width: 100%;
     }
+    .profile p {
+        bottom:-45px;
+    }
     .bubble {
         top: 225px;
         left: 5px;
