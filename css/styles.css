@@ -86,7 +86,7 @@ body {
 }
 #bio {
     font-size: 1.25em;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     line-height: 1.2em;
 }
 .main-header {
@@ -206,8 +206,6 @@ hr {
     background-color: transparent;
 }
 .project-container {
-    /*background-color: RGBA(41, 132, 175, 1);*/
-    
     background: url("http://img3.goodfon.ru/wallpaper/big/f/15/tekstura-tekstury-fon-linii.jpg");
     background-position: center center;
     background-size: cover;
@@ -220,16 +218,11 @@ hr {
     padding-bottom: 100px;
 }
 .grid * img {
-    /*display:block;*/
-    
     max-width: 100%;
     max-height: auto;
     display: block;
-    /*margin:0 auto;*/
 }
 .description-box {
-    /*border: 1px inset gray;*/
-    
     max-width: 100%;
     min-height: 400px;
     text-align: center;
@@ -254,8 +247,6 @@ hr {
     text-decoration: underline;
 }
 h3 {
-    /*color:RGBA(148, 204, 243, 1);*/
-    
     color: #ddd;
     text-shadow: 0px 4px 4px black;
 }
@@ -374,27 +365,13 @@ h5 {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /*html {
-        background: url(../images/beach.jpg) no-repeat center center fixed;
-        background-size: cover;
-        height: 100%;
-        overflow: hidden;
-    }
-    body {
-        height: 100%;
-        overflow: scroll;
-        -webkit-overflow-scrolling: touch;
-    }
-    .parallax {
-        display:hidden;
-    }*/
     #bio {
         font-size: 1.3em;
         line-height: 18px;
     }
     .main-header {
         left: 20px;
-        top: 150px;
+        top: 60px;
     }
     .main-header h2 {
         font-size: 4em;
@@ -403,8 +380,16 @@ h5 {
         background-position: 80% 100%;
     }
     .bubble {
-        top: 465px;
-        left: 19%;
+        top: 50%;
+        left: 32%;
+    }
+    h1 {
+        font-size: 33px;
+        line-height: 30px;
+    }
+    #bio {
+        font-size: 1.2em;
+        line-height: 18px;
     }
     .project-container1 {
         margin-bottom: 0px;
@@ -413,7 +398,7 @@ h5 {
         padding-bottom: 90px;
     }
 }
-@media screen and (min-width: 854px) {
+@media screen and (min-width: 854px) and (max-height: 600px) {
     .parallax {
         background-position: 80% 100%;
     }
@@ -425,6 +410,10 @@ h5 {
         -webkit-column-gap: 0px;
         max-width: 90%;
         margin: 0 auto;
+    }
+    h1 {
+        font-size: 33px;
+        line-height: 30px;
     }
     h2 {
         font-size: 3.8em;
@@ -440,8 +429,13 @@ h5 {
         transition: 0s;
     }
     .bubble {
-        left: 25%;
-        top: 450px;
+        left: 33%;
+        top: 46%;
+    }
+    #bio {
+        font-size: 1.1em;
+        line-height: 15px;
+        letter-spacing: 1.2px;
     }
     .project-container2 {
         padding-bottom: 90px;
@@ -450,13 +444,24 @@ h5 {
 }
 @media screen and (min-width: 1025px) {
     .bubble {
-        left: 35%;
-        top: 425px;
+        left: 42%;
+        top: 52%;
     }
-    .project-container2 {
-        padding-bottom: 40px;
-        padding-top: 100px;
+    h1 {
+        font-size: 30px;
+        line-height: 28px;
     }
+    #bio {
+        font-size: 1.25em;
+        letter-spacing: 1.5px;
+        line-height: 1em;
+
+    }
+}
+.project-container2 {
+    padding-bottom: 40px;
+    padding-top: 100px;
+}
 }
 @media screen and (min-width: 1225px) {
     .project-container2 {
@@ -466,8 +471,7 @@ h5 {
 @media screen and (min-width: 1422px) {
     .bubble {
         left: 45%;
-        top: 400px;
-        /*max-width: 55%;*/
+        top: 50%;
     }
     .main-header h2 {
         font-size: 5em;
@@ -499,9 +503,7 @@ h5 {
     }
     .bubble {
         left: 49%;
-        top: 370px;
-        /*top:500px;*/
-        /*max-width: 50%;*/
+        top: 50%;
     }
 }
 @media screen and (min-width: 1800px) {
@@ -509,8 +511,8 @@ h5 {
         font-size: 6em;
     }
     .bubble {
-        left: 50%;
-        top: 400px;
+        left: 55%;
+        top: 43%;
     }
 }
 @-moz-document url-prefix() {

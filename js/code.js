@@ -18,7 +18,7 @@ $(document).ready(function() {
             var device = navigator.userAgent.toLowerCase();
             var ios = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
 
-            $(".main-header").css("top", Math.max(0, 200 - $(this).scrollTop() - 50));
+            $(".main-header").css("top", Math.max(0, 150 - $(this).scrollTop() - 50));
 
 
             if (jQuery(this).scrollTop() > 90) {
