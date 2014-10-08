@@ -445,7 +445,7 @@ h5 {
 @media screen and (min-width: 1025px) {
     .bubble {
         left: 42%;
-        top: 52%;
+        top: 48%;
     }
     h1 {
         font-size: 30px;
@@ -455,13 +455,11 @@ h5 {
         font-size: 1.25em;
         letter-spacing: 1.5px;
         line-height: 1em;
-
     }
-}
-.project-container2 {
-    padding-bottom: 40px;
-    padding-top: 100px;
-}
+    .project-container2 {
+        padding-bottom: 40px;
+        padding-top: 100px;
+    }
 }
 @media screen and (min-width: 1225px) {
     .project-container2 {
@@ -503,7 +501,7 @@ h5 {
     }
     .bubble {
         left: 49%;
-        top: 50%;
+        top: 45%;
     }
 }
 @media screen and (min-width: 1800px) {
@@ -512,7 +510,7 @@ h5 {
     }
     .bubble {
         left: 55%;
-        top: 43%;
+        top: 45%;
     }
 }
 @-moz-document url-prefix() {
