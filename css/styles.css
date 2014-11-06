@@ -246,18 +246,34 @@ hr {
 }
 .project1 {
     padding-right:50px;
-    border-radius:25%;
+
 }
 .project2 {
     padding-left:50px;
-    border-radius:25%;
+
 }
 .project3 {
     padding-right:50px;
-    border-radius:25%;
+
 }
 .project4 {
     padding-left:50px;
+
+}
+.project1 img {
+
+    border-radius:25%;
+}
+.project2 img{
+
+    border-radius:25%;
+}
+.project3 img {
+
+    border-radius:25%;
+}
+.project4 img {
+
     border-radius:25%;
 }
 .project a {
