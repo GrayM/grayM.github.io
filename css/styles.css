@@ -32,6 +32,7 @@ header, section, footer, aside, nav, main, article, figure {
   -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
   box-shadow: 0 0 50px rgba(0,0,0,0.8);
 }
+<<<<<<< HEAD
 .background1 {
     text-align: center;
   color:#B1B1B1;
@@ -41,11 +42,17 @@ header, section, footer, aside, nav, main, article, figure {
   text-shadow:2px 2px #000;
   height:100vh;
 }
+=======
+>>>>>>> c3bc264ebbfe28f32b0d3cda48fa40563f25d46a
 .background {
   text-align: center;
   color:#B1B1B1;
   position: relative;
+<<<<<<< HEAD
   background-color: rgba(51, 51, 51, .4);
+=======
+  background-color: rgba(51, 51, 51, .8);
+>>>>>>> c3bc264ebbfe28f32b0d3cda48fa40563f25d46a
   z-index: 0;
   text-shadow:2px 2px #000;
   height:100vh;
@@ -526,7 +533,10 @@ background: url('../images/coloredpencils.jpeg') 100% 0 no-repeat fixed;
 }
 
 #logos {
+
 background: url('../images/thankscoffee.png') 0% 0 no-repeat fixed;
+
+/*background: url('../images/coffeecup2.png') 0% 0 no-repeat fixed;*/
   height:100vh;
     z-index:-1;
   margin: 0 auto; 
