@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
 var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
     if( ismobile ) {
