@@ -23,6 +23,8 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
         var h = $("h2");
         var i = $(".icons");
         var b = $(".fa-angle-double-down");
+        var n = $("nav ul li a, nav");
+        var headers = $("h3.hide, h4.hide");
         var is_touch_device = 'ontouchstart' in document.documentElement;
         var isSticking = false;
         var ios = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false);
@@ -32,7 +34,7 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
             $(window).scroll(function() {
                 var windowpos = $(window).scrollTop();
                 var posh = h.position();
-                var shouldSetSticky0 = windowpos >= posh.top + 270;
+                var shouldSetSticky0 = windowpos >= posh.top + 500;
                 var device = navigator.userAgent.toLowerCase();
                 var ios = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false);
 
@@ -57,6 +59,8 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
                         });
                     }
                 }
+                
+        
 
 
                 if (shouldSetSticky0 && !isSticking) {
@@ -65,6 +69,9 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
                     i.addClass("iconMove");
                     b.removeClass("fa-angle-double-down");
                     h.addClass("vanish");
+                    n.addClass("navChange");
+                    headers.removeClass('hide');
+                    headers.addClass('show');
                     isSticking = true;
                 } else if (!shouldSetSticky0 && isSticking) {
 
@@ -74,8 +81,12 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
 
                     b.addClass("fa-angle-double-down");
                     h.removeClass("vanish");
+                    n.removeClass("navChange");
+                    headers.addClass('hide');
+                    headers.removeClass('show');
                     isSticking = false;
                 }
+                
 
 
 

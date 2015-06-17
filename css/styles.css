@@ -8,7 +8,7 @@
 }
 html, body {
   padding: 0;
-    height:100%;
+    height:90%;
   
 }
 header, section, footer, aside, nav, main, article, figure {
@@ -18,7 +18,7 @@ header, section, footer, aside, nav, main, article, figure {
 /*-------------------TOP SECTION---------------------*/
 
 .parallax {
-  background: url('../images/simple.jpg') 50% 0 repeat fixed;
+  background: url('../images/portfolio-background.jpg') 50% 0 repeat fixed;
   height:100vh;
   margin: 0 auto; 
   width: 100%; 
@@ -29,39 +29,49 @@ header, section, footer, aside, nav, main, article, figure {
   width: 100%; 
   max-width: 1920px; 
   position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+font-family: Century Gothic, sans-serif;
+/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+/*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
-<<<<<<< HEAD
-.background1 {
-    text-align: center;
-  color:#B1B1B1;
-  position: relative;
-  background-color: rgba(51, 51, 51, .5);
-  z-index: 0;
-  text-shadow:2px 2px #000;
-  height:100vh;
+
+.container img {
+    padding:20px;
 }
-=======
->>>>>>> c3bc264ebbfe28f32b0d3cda48fa40563f25d46a
+.moviebug img, #moviebug-description {
+    margin-top:35px;
+}
+#moviebug-description, #japanesereiki-description, #geekygigs-description {
+
+    padding:5px;
+}
+.geekygigs img {
+    margin-bottom:35px;
+}
+.lastProject {
+ margin-bottom:35px;   
+}
 .background {
   text-align: center;
-  color:#B1B1B1;
+  color:#86868D;
   position: relative;
-<<<<<<< HEAD
-  background-color: rgba(51, 51, 51, .4);
-=======
   background-color: rgba(51, 51, 51, .8);
->>>>>>> c3bc264ebbfe28f32b0d3cda48fa40563f25d46a
   z-index: 0;
-  text-shadow:2px 2px #000;
-  height:100vh;
+/*  text-shadow:2px 2px #000;*/
+  height:85vh;
+}
+#home {
+ height:85vh;   
 }
 .main-header {
   font-family: Century Gothic, sans-serif;
   text-align: center;
   padding-top:180px;
   transition: all .25s ease;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 .content img {
  height:65px;
@@ -74,8 +84,11 @@ header, section, footer, aside, nav, main, article, figure {
   z-index: 10;
   font-family: Century Gothic, sans-serif;
   font-size: 1.25em;
+    
 }
-
+ul.nav {
+    margin-bottom:0;
+}
 nav {
   position: fixed;
   z-index: 5;
@@ -83,6 +96,14 @@ nav {
 }
 nav ul li ul li a {
     background-color: #2C3E50;
+}
+.navChange {
+    color:#0599C7 !important;
+    text-shadow:none !important;
+    background-color:white!important;
+    width:100% !important;
+    padding-bottom:0;
+
 }
 .mark {
   font-weight: 400;
@@ -302,7 +323,24 @@ nav select {
 .nav span {
   display: none;
 }
-
+.my-logo {
+    float:right;
+    text-align:right;
+}
+@-moz-document url-prefix() { 
+    .span2.label{
+width: 9%;
+text-align: center;
+    }
+    .experience-label {
+     margin-bottom:30px !important;   
+    }
+    .span2.label {
+        margin-top:50px !important;
+        margin-bottom:80px;
+    }
+    
+}
 /* media queries */
 
 @media only screen and (max-width: 767px) {
@@ -350,6 +388,7 @@ nav select {
   cursor: pointer;
   font-weight: bold;
   font-size: 1.5em;
+    color:#fff;
 /*  margin-right:-70px;*/
     padding-top:35px;
 }
@@ -366,6 +405,7 @@ nav select {
   display: none;
   padding: 5px;
     text-align:center;
+    color:#fff;
 /*    margin-right:-80px;*/
 }
 
@@ -373,11 +413,6 @@ nav select {
 .project a {
   color: RGBA(0, 206, 274, 1);
   text-decoration: underline;
-}
-
-#desc {
-  -webkit-transition: .5s;
-  transition: .5s;
 }
 
 .hint {
@@ -389,25 +424,32 @@ span {
   font-size: 1.8em;
 }
 
-h2,
-h4 {
-  font-weight:100;
-  line-height: 1em;
-  padding-right: 5px;
-  color:#C2C2C2;
-    text-shadow:2px 2px black;
-  transition: all .5s ease;
-}
+
+
 h2:hover {
     color:#fff;
     text-shadow:2px 2px #004A6C;
     font-size:4.3em;
     transition:.7s;
 }
-h4 {
-  text-align: right;
+h3.hide, h4.hide {
+    display:none;
+    text-align: right;
 }
 
+h3.show, h4.show {
+/*    text-align:right;*/
+    color:#0599C7;
+    margin:0;
+    padding:0;
+    line-height:25px;
+    font-size:2em;
+    font-weight:100;
+    
+}
+h4.show {
+    font-size:1.3em;
+}
 .content ul li {
   list-style-type: none;
   display: inline;
@@ -427,7 +469,9 @@ h4 {
   background-height: 960px;
   background-position: center-center;
 }
-
+.icons {
+    margin-top:20px;
+}
 .iconMove {
   position: fixed;
   bottom: 0px;
@@ -469,41 +513,34 @@ h4 {
  height:180px;
 /*    margin-top:25px;*/
 }
-#about {
- background: url('../images/coloredpencils.jpeg') 50% 0 repeat fixed; 
-  min-height: 100%;
-    z-index:-1;
-  margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
-  position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
-}
-#about article {
-  height: 458px; 
-  position: absolute; 
-  text-align: center; 
-  top: 150px; 
-  width: 100%; 
-}
+
 #projects {
- background: url('../images/coloredpencils.jpeg') 50% 0 repeat fixed; 
- height:60vh;
+/* background: url('../images/coloredpencils.jpeg') 50% 0 repeat fixed; */
+/* height:60vh;*/
     z-index:-1;
   margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
+/*  width: 100%; */
+/*  max-width: 1920px; */
   position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+/*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
-.span4 img{
-  height: 60vh;
+
+.row3 {
+    padding:10px;
+/*    border:1px solid black;*/
+    text-align:center;
+    font-size:14px;
+}
+#line {
+ height:80px;
+}
+.academy span {
+ font-size:16px;   
 }
 .span4.description {
  height:30vh;
- border: 1px solid black;
+/* border: 1px solid black;*/
     background-color: #333;
 }
 .span4 a:hover {
@@ -511,19 +548,24 @@ h4 {
  opacity:.5;
 }
 #experience {
-background: url('../images/coloredpencils.jpeg') 100% 0 no-repeat fixed; 
+/*background: url('../images/coloredpencils.jpeg') 100% 0 no-repeat fixed; */
 /*    border-bottom:20px solid #272727;*/
 /*    min-height: 100%;*/
-  height: 100vh; 
+/*  height: 100vh; */
     z-index:-1;
   margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
+/*  width: 100%; */
+/*  max-width: 1920px; */
   position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 /*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
-
+#experience .row3 {
+ font-size:16px;   
+}
+.experience-description {
+    color:#898686
+}
 #experience article {
   height: 458px; 
   position: absolute; 
@@ -534,26 +576,26 @@ background: url('../images/coloredpencils.jpeg') 100% 0 no-repeat fixed;
 
 #logos {
 
-background: url('../images/thankscoffee.png') 0% 0 no-repeat fixed;
+/*background: url('../images/thankscoffee.png') 0% 0 no-repeat fixed;*/
 
 /*background: url('../images/coffeecup2.png') 0% 0 no-repeat fixed;*/
-  height:100vh;
+/*  height:100vh;*/
     z-index:-1;
   margin: 0 auto; 
-  width: 100%; 
-  max-width: 1920px; 
+/*  width: 100%; */
+/*  max-width: 1920px; */
   position: relative; 
-  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
-  box-shadow: 0 0 50px rgba(0,0,0,0.8);
+/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+/*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
-#logos .background {
-    height:100vh;
+.coffee {
+    background: url('../images/portfolio-background-thanks.png') 0% 0 no-repeat fixed;
+    height:100%;
+    height:420px;   
 }
-#logo {
- height:800px;   
-}
+
 #logos article {
-  height: 458px; 
+/*  height: 458px; */
   position: absolute; 
   text-align: center; 
   top: 150px; 
@@ -561,7 +603,9 @@ background: url('../images/thankscoffee.png') 0% 0 no-repeat fixed;
 }
 #academy {
  height:180px;
- margin-top:100px;
+}
+#markanthony {
+ height:140px; 
 }
 #mail {
   padding-left: 30px;
@@ -583,62 +627,40 @@ background: url('../images/thankscoffee.png') 0% 0 no-repeat fixed;
   font-size: 1.5em;
   margin-bottom: 100px;
 }
-
-/*----------------------BOTTOM CONTENT----------------------*/
-
-.project-container {
-/*  height: 45px;*/
+.label {
+    background: url('../images/portfolio-background.jpg') 50% 0 repeat fixed;
+-webkit-text-fill-color: transparent;
+    font-weight:100;
+/*    display:inline-block;*/
+/*    width:10%;*/
+/*    margin-left:-30%;*/
+    margin-top:25px;
+    -webkit-background-clip: text;
+    font-size:95px;
+    line-height:95px;
+    font-weight:bold;
+}
+.label.experience-label {
+ font-size:50px;
+    line-height:50px;
+    margin-bottom:90px;
+}
+.label.contact-label {
+ font-size:50px;
+    line-height:50px;
+    margin-bottom:30px;
+    margin-left:0;
 }
 
-.project-container2 {
-  padding-top: 75px;
-  padding-bottom: 100px;
+.divide {
+    width:100%;
 }
-
-
-
-.description-box {
-  max-width: 100%;
-  min-height: 400px;
-  text-align: center;
-}
-
-.project-p {
-  padding-top: 50px;
-  width: 100%;
-  text-align: center;
-  margin: 0;
-  font-size: 2.75em;
-  font-family: 'Titillium Web', sans-serif;
-  text-decoration: underline;
-  margin-bottom: 75px;
-}
-
-.project {
-  text-align: center;
-  margin: 0 auto;
-  max-height: 500px;
-  border-radius: 25%;
-}
-
-.project a {
-  color: RGBA(0, 75, 195, 1);
-  text-decoration: underline;
-}
-
-h3 {
-  color: #ddd;
-  text-shadow: 0px 4px 4px black;
-}
-
-#build {
-  color: RGBA(190, 190, 190, .7);
-}
-
-h5 {
-  color: RGBA(0, 176, 244, 1);
-  font-size: 1.5em;
-  line-height: 25px;
+#grayline {
+width:75%;
+margin-left:12%;
+/*    margin-top:40px;*/
+    height:25px;
+    margin-bottom:40px;
 }
 .profile {
   text-align: center;
@@ -667,8 +689,9 @@ h5 {
         background-size: cover;
         background-color:gray;
     }
+      
     #experience, #projects, #about {
-        background: url('../images/coloredpencilsmall.png') no-repeat center center fixed; 
+/*        background: url('../images/coloredpencilsmall.png') no-repeat center center fixed; */
         background-size: cover;
         -webkit-background-size: cover;
         background-color:#282828;
@@ -677,12 +700,21 @@ h5 {
 
     }
     #logos {
-     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  
+/*     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  */
 
     }
+      .span2.label {
+          display:none !important;
+      }
 }
-@media screen and (max-width: 600px) {
-/*
+@media screen and (max-width: 767px) {
+    .span2.label, .label.experience-label {
+          display:none !important;
+      }
+    .coffee {
+        background:none;
+    }
+/*  
     .parallax {
         background: url('../images/simplesmall.png') 50% 0 repeat fixed;
 */
@@ -709,7 +741,7 @@ h5 {
         padding-top:0px;
     }
     #experience .background, #projects .background {
-     height:150vh;   
+/*     height:150vh;   */
     }
     
   .main-header {
@@ -719,13 +751,8 @@ h5 {
 /*    text-align: left;*/
     padding-left: 0px;
   }
-h2 {
-    padding-bottom:0px;
-    font-weight:1;
-}
   h4 {
-    padding: 15px 10px;
-    font-size: .5em;
+    margin-top:10px;
   }
 
   #bio {
@@ -735,10 +762,6 @@ h2 {
     text-align: left;
     padding-left: 20px;
     
-  }
-
-  .main-header h2 {
-    font-size: 3.5em;
   }
     .row-fluid {
         padding-top:0;
@@ -760,7 +783,7 @@ h2 {
 /*        background-color:gray;*/
     }
     #experience, #projects, #about {
-        background: url('../images/coloredpencilssmall.png') 50% 0 repeat fixed;
+/*        background: url('../images/coloredpencilssmall.png') 50% 0 repeat fixed;*/
 /*        background-size: cover;*/
 /*        background-color:#282828;*/
         overflow:scroll;
@@ -768,10 +791,10 @@ h2 {
 
     }
     #logos {
-     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  
+/*     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  */
     }
     #experience .background, #projects .background {
-     height:150vh;   
+/*     height:150vh;   */
     }
 }
 
@@ -832,47 +855,6 @@ h2 {
     line-height: 28px;
   }
 
-  #bio {
-    font-size: 1.25em;
-    letter-spacing: 1.5px;
-    line-height: 1em;
-  }
 }
 
-@media screen and (min-width: 1225px) {
-  .project-container2 {
-    padding-bottom: 0px;
-  }
-    
-}
 
-@media screen and (min-width: 1422px) {
-  .main-header h2 {
-    font-size: 5em;
-  }
-
-  .main-header {
-    left: 60px;
-  }
-}
-
-@media screen and (min-width: 1517px) {
-
-  h2 {
-    font-size: 4.8em;
-    font-weight: 200;
-  }
-
-  h4 {
-    font-size: 2.3em;
-    font-weight: 100;
-  }
-
-}
-
-@media screen and (min-width: 1680px) {
-  .main-header h2 {
-    font-size: 6em;
-  }
-   
-}
