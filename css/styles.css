@@ -808,6 +808,9 @@ margin-left:12%;
         .content ul {
             margin:0;
         }
+    .background {
+        background:none;
+    }
     #moviebug-description,
 /*      
     .parallax {
