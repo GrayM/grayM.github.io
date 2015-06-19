@@ -735,15 +735,6 @@ margin-left:12%;
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
       
-    #experience, #projects, #about {
-/*        background: url('../images/coloredpencilsmall.png') no-repeat center center fixed; */
-        background-size: cover;
-        -webkit-background-size: cover;
-        background-color:#282828;
-        overflow:scroll;
-        
-
-    }
     #logos {
 /*     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  */
 
@@ -752,6 +743,7 @@ margin-left:12%;
           display:none !important;
       }
 }
+
 @media screen and (max-width: 767px) {
     .span2.label, .label.experience-label {
           display:none !important;
@@ -783,9 +775,12 @@ margin-left:12%;
     h2 {
         font-sizes:2.5em;
     }
-    #home, .background {
-        height:47vh;
+    #home {
+        height:80%;
         
+    }
+    .background {
+        height:100%;
     }
     .main-header {
         padding-top:90px;
