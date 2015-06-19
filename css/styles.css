@@ -734,12 +734,6 @@ margin-left:12%;
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
-      .parallax {
-        background: url('../images/simplesmall.png') no-repeat center center fixed; 
-          -webkit-background-size: cover;
-        background-size: cover;
-        background-color:gray;
-    }
       
     #experience, #projects, #about {
 /*        background: url('../images/coloredpencilsmall.png') no-repeat center center fixed; */
@@ -758,8 +752,7 @@ margin-left:12%;
           display:none !important;
       }
 }
-@media screen and (max-width: 767px)
-and (orientation: landscape) {
+@media screen and (max-width: 767px) {
     .span2.label, .label.experience-label {
           display:none !important;
       }
@@ -792,6 +785,7 @@ and (orientation: landscape) {
     }
     #home, .background {
         height:47vh;
+        
     }
     .main-header {
         padding-top:90px;
@@ -809,8 +803,11 @@ and (orientation: landscape) {
         .content ul {
             margin:0;
         }
+    .background {
+/*        background:none;*/
+    }
    
-
+*/
     .row-fluid {
         padding-top:0px;
     }
@@ -841,44 +838,12 @@ and (orientation: landscape) {
     }
 
 }
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 640px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-      #home, .background {
-        height:100vh;
-    }
-
-}
 @media screen and (min-width: 601px) and (max-width:767px) {
 
   .main-header h2 {
     font-size: 3.75em;
   }
-
-  .main-header {
-    top: 50px;
-  }
-    .parallax {
-        background: url('../images/simplesmall.png') 0 0 repeat fixed;
-/*        background-size: cover;*/
-/*        background-color:gray;*/
-    }
-    #experience, #projects, #about {
-/*        background: url('../images/coloredpencilssmall.png') 50% 0 repeat fixed;*/
-/*        background-size: cover;*/
-/*        background-color:#282828;*/
-        overflow:scroll;
-        
-
-    }
-    #logos {
-/*     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  */
-    }
-    #experience .background, #projects .background {
-/*     height:150vh;   */
-    }
+    
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
