@@ -728,12 +728,18 @@ margin-left:12%;
     color: #777;
     font-size:16px;
 }
+.mb {
+    margin-top:35px;
+}
 /*----------------------RESPONSIVENESS-----------------------*/
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 768px) {
     .span2.label, .label.experience-label {
           display:none !important;
       }
+    .mb {
+        margin-top:0;
+    }
     .coffee {
         display:none;
     }
@@ -899,9 +905,11 @@ margin-left:12%;
   }
 
 }
+
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
      #home, .background {
-         height:110vh;
+         height:115vh;
      }
 }
 
+}
