@@ -7,8 +7,7 @@
   box-sizing: border-box;
 }
 html, body {
-  padding: 0;
-    height:90%;
+/*    height:85%;*/
   
 }
 header, section, footer, aside, nav, main, article, figure {
@@ -686,12 +685,12 @@ footer {
 }
 .label.experience-label {
  font-size:50px;
-    line-height:50px;
+    line-height:100%;
     margin-bottom:50px;
 }
 .label.contact-label {
- font-size:50px;
-    line-height:50px;
+ font-size:58px;
+    line-height:100%;
     margin-bottom:30px;
     margin-left:0;
     margin-top:0;
