@@ -438,9 +438,9 @@ h2:hover {
     font-size:4.3em;
     transition:.7s;
 }
-h3.hide, h4.hide {
-    display:none;
-    text-align: right;
+.hide {
+    display:none !important;
+
 }
 
 h3.show, h4.show {
@@ -468,7 +468,6 @@ h4.show {
   -ms-transform: translateY(-220px);
   transform: translateY(-220px);
 }
-
 .iOSBackground {
   position: relative;
   background-width: 640px;
@@ -491,11 +490,15 @@ h4.show {
   display: inline-block;
     z-index:30;
 }
-
-.iosIcons {
-  text-align: middle;
-  display: inline-block;
-  padding-right: 0px;
+.iconMove.pinned {
+/* position:relative;*/
+}
+footer {
+  font-size:10px;
+    text-align:center;
+}
+footer .iconMove img {
+ height:80%;
 }
 
 .mobile-header {
@@ -517,7 +520,7 @@ h4.show {
 /*------------------LINKS-------------------------*/
 #me {
  height:180px;
- margin-left:27%;
+ margin-left:23%;
 }
 
 #projects {
@@ -597,12 +600,15 @@ h4.show {
 /*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
 .coffee {
-    background: url('../images/portfolio-background-thanks.png') 0% 0 no-repeat fixed;
+    background: url('../images/portfolio-background-thanks.png') 40% 55% no-repeat fixed;
     height:100%;
     height:420px;
     margin-bottom:30px;
+    
 }
-
+.social-links {
+    margin-top:25px;
+}
 #logos article {
 /*  height: 458px; */
   position: absolute; 
@@ -612,8 +618,17 @@ h4.show {
 }
 footer {
  width:100%;
-    height:50px;
-    background-color:rgba(66,66,66,0.6);
+ height:150px;
+ background-color:rgba(230,230,230,0.6);
+}
+.socialLinks {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.socialLinks ul li {
+    display:inline-block;
+    padding-left:25px;
 }
 #academy {
  height:180px;
@@ -641,8 +656,9 @@ footer {
   font-size: 1.5em;
   margin-bottom: 100px;
 }
-.btn {
+.btn-primary {
     color:white !important;
+    @include buttonBackground(red, white);
 }
 .label {
     background: url('../images/portfolio-background.jpg') 50% 0 repeat fixed;
@@ -707,7 +723,7 @@ margin-left:12%;
 /*  bottom: -50px;*/
 }
 .phone {
-    margin-left:25%;
+    margin-left:30%;
     color: #777;
     font-size:16px;
 }
@@ -832,12 +848,14 @@ margin-left:12%;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   #bio {
     font-size: 1.3em;
     line-height: 18px;
   }
-
+.coffee {
+    background-position:60% 55%;
+}
   .main-header {
     left: 20px;
     top: 60px;

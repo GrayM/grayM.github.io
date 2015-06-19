@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+   
 var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
     if( ismobile ) {
@@ -31,7 +31,16 @@ var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(n
         var ios = (navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false);
 
         if (!ios) {
+             $(window).scroll(function() {
+               if($(window).scrollTop() + $(window).height() == $(document).height()) {
+                   $( ".iconMove" ).hide("fast");
+                   $( ".iconMove" ).removeClass('show');
+                } else {
 
+                    $( ".iconMove" ).removeClass('hide');
+                    $( ".iconMove" ).show("fast");
+                }
+            });
             $(window).scroll(function() {
                 var windowpos = $(window).scrollTop();
                 var posh = h.position();
