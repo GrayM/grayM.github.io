@@ -729,27 +729,30 @@ margin-left:12%;
     font-size:16px;
 }
 /*----------------------RESPONSIVENESS-----------------------*/
-
-@media screen 
-  and (device-width: 360px) 
-  and (device-height: 640px) 
-  and (-webkit-device-pixel-ratio: 3) {
-      
-    #logos {
-/*     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  */
-
-    }
-      .span2.label {
-          display:none !important;
-      }
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+     #home, .background {
+         height:100vh;
+     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 320px) {
     .span2.label, .label.experience-label {
           display:none !important;
       }
     .coffee {
         display:none;
+    }
+    h3.show {
+        font-size:1.5em;
+    }
+    h4.show {
+        font-size:1.2em;
+    }
+    select {
+        width: 170px;
+    }
+    .my-logo {
+     padding:0;   
     }
     .row-fluid {
         text-align:center;
@@ -901,5 +904,9 @@ margin-left:12%;
   }
 
 }
-
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+     #home, .background {
+         height:100vh;
+     }
+}
 
