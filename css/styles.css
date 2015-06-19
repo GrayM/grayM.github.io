@@ -67,6 +67,9 @@ font-family: Century Gothic, sans-serif;
   padding-top:180px;
   transition: all .25s ease;
 }
+ul, ol {
+    margin:0;
+}
 hr {
     border: 0;
     height: 1px;
@@ -367,7 +370,9 @@ text-align: center;
 .top .nav {
   position: fixed;
 }
-
+.social-links {
+    text-align:center;
+}
 #bio {
   font-family: Century Gothic, sans-serif;
   font-size: 1.5em;
@@ -407,6 +412,9 @@ text-align: center;
   padding: 5px;
     text-align:center;
     color:#fff;
+    max-width:500px;
+      width: 100%;
+  margin: 0 auto;
 /*    margin-right:-80px;*/
 }
 
@@ -422,7 +430,7 @@ text-align: center;
 }
 
 span {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 
@@ -519,7 +527,6 @@ footer .iconMove img {
 /*------------------LINKS-------------------------*/
 #me {
  height:180px;
- margin-left:23%;
 }
 
 #projects {
@@ -563,6 +570,7 @@ footer .iconMove img {
     z-index:-1;
   margin: 0 auto;
     border-bottom:1px solid #ddd;
+    border-top: 1px solid #ddd;
     margin-bottom:50px;
 /*  width: 100%; */
 /*  max-width: 1920px; */
@@ -605,9 +613,6 @@ footer .iconMove img {
     margin-bottom:30px;
     
 }
-.social-links {
-    margin-top:25px;
-}
 #logos article {
 /*  height: 458px; */
   position: absolute; 
@@ -623,6 +628,8 @@ footer {
 .socialLinks {
   position: relative;
   top: 50%;
+    margin-top:25px;
+    text-align:center;
   transform: translateY(-50%);
 }
 .socialLinks ul li {
@@ -676,13 +683,9 @@ footer {
     padding-left:5px;
 }
 .contact-info, .contact-info img {
-      text-align: center;
-  margin-left: -15%;
     margin-top:10px;
 }
-.contact-info .btn {
-    
-}
+
 .label.experience-label {
  font-size:50px;
     line-height:100%;
@@ -722,7 +725,6 @@ margin-left:12%;
 /*  bottom: -50px;*/
 }
 .phone {
-    margin-left:30%;
     color: #777;
     font-size:16px;
 }
@@ -761,9 +763,53 @@ margin-left:12%;
           display:none !important;
       }
     .coffee {
-        background:none;
+        display:none;
     }
-/*  
+    .row-fluid {
+        text-align:center;
+    }
+    .profile p{
+ 
+     font-size:1em;
+    }
+    .social-links {
+        margin-bottom:50px;
+        margin-top:-50px;
+        text-align:center;
+    }
+    .fa-3x {
+        font-size:2em;
+    }
+    .icons {
+        margin-top:0px;
+    }
+    .container .headerExpand {
+        padding-top:20px;
+    }
+    h2 {
+        font-sizes:2.5em;
+    }
+    #home, .background {
+        height:47vh;
+    }
+    .main-header {
+        padding-top:90px;
+    }
+    .content {
+        font-size: 12px;
+    }
+    .contact-info {
+        margin-left:0;
+    }
+    footer ul {
+        margin:0px;
+        margin-left:-20px;
+    }
+        .content ul {
+            margin:0;
+        }
+    #moviebug-description,
+/*      
     .parallax {
         background: url('../images/simplesmall.png') 50% 0 repeat fixed;
 */
@@ -809,7 +855,6 @@ margin-left:12%;
     line-height: 14px;
     /*        letter-spacing: 1.2px;*/
     text-align: left;
-    padding-left: 20px;
     
   }
     .row-fluid {
