@@ -811,29 +811,7 @@ margin-left:12%;
     .background {
         background:none;
     }
-    #moviebug-description,
-/*      
-    .parallax {
-        background: url('../images/simplesmall.png') 50% 0 repeat fixed;
-*/
-/*        background-size: cover;*/
-/*        background-color:gray;*/
-    }
-/*
-    #experience, #projects, #about {
-        background: url('../images/coloredpencilssmall.png') 50% 0 repeat fixed;
-*/
-/*        background-size: cover;*/
-/*        background-color:#282828;*/
-/*        overflow:scroll;*/
-        
-
-/*
-    }
-    #logos {
-     background: background: url('../images/coffeecupsmall.png') 50% 0 repeat fixed;  
-
-    }
+   
 */
     .row-fluid {
         padding-top:0px;
