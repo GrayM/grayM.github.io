@@ -29,8 +29,6 @@ header, section, footer, aside, nav, main, article, figure {
   max-width: 1920px; 
   position: relative; 
 font-family: Century Gothic, sans-serif;
-/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-/*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
 
 .container img {
@@ -55,7 +53,6 @@ font-family: Century Gothic, sans-serif;
   position: relative;
   background-color: rgba(51, 51, 51, .8);
   z-index: 0;
-/*  text-shadow:2px 2px #000;*/
   height:80vh;
 }
 #home {
@@ -111,20 +108,9 @@ nav ul li ul li a {
   font-weight: 400;
 }
 
-/*
-  navigation bar
-*/
-
 .nav {
   list-style: none;
 }
-
-/* 
-  top menu list items
-
-  1. stack top links side by side 
-  2. needed for absolute positioning of   submenu
-*/
 
 .nav li {
   float: left;
@@ -196,14 +182,6 @@ nav ul li ul li a {
 .nav > li:hover .has-submenu:after {
   opacity: 1;
 }
-
-/*
-  CSS up arrow for submenu
-
-  1. add spacing between top menu and arrow
-  2. Hide off screen
-
-*/
 
 .submenu:before {
   content: "";
@@ -280,17 +258,6 @@ nav ul li ul li a {
   -webkit-transition: background ease .5s;
   transition: background ease .5s;
 }
-
-/* 
-  submenu links 
-
-  styles are inherited from .nav li a, so some adjustments are made here.
-
-  1. make slightly smaller
-  2. margin means on hover bg doesn't touch the edges
-  3. add transition
-*/
-
 .submenu a {
   font-size: 90%;
   /*1*/
@@ -379,9 +346,6 @@ text-align: center;
   letter-spacing: .8px;
   text-align: right;
   padding-top: 1px;
-/*  padding-right: 30px;*/
-/*  padding-bottom: 50px;*/
-  /*  display: none;*/
 }
 
 .spacer {
@@ -395,7 +359,6 @@ text-align: center;
   font-weight: bold;
   font-size: 1.5em;
     color:#fff;
-/*  margin-right:-70px;*/
     padding-top:35px;
 }
 .headerExpand span {
@@ -415,7 +378,6 @@ text-align: center;
     max-width:500px;
       width: 100%;
   margin: 0 auto;
-/*    margin-right:-80px;*/
 }
 
 
@@ -440,7 +402,6 @@ h2 {
     font-size:3.5em;
 }
 h2:hover {
-/*    color:#fff;*/
     text-shadow:2px 2px #004A6C;
     font-size:4.3em;
     transition:.7s;
@@ -451,7 +412,6 @@ h2:hover {
 }
 
 h3.show, h4.show {
-/*    text-align:right;*/
     color:#0599C7;
     margin:0;
     padding:0;
@@ -498,7 +458,6 @@ h4.show {
     z-index:30;
 }
 .iconMove.pinned {
-/* position:relative;*/
 }
 footer {
   font-size:10px;
@@ -530,20 +489,13 @@ footer .iconMove img {
 }
 
 #projects {
-/* background: url('../images/coloredpencils.jpeg') 50% 0 repeat fixed; */
-/* height:60vh;*/
     z-index:-1;
   margin: 0 auto; 
-/*  width: 100%; */
-/*  max-width: 1920px; */
   position: relative; 
-/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-/*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
 
 .row3 {
     padding:10px;
-/*    border:1px solid black;*/
     text-align:center;
     font-size:14px;
 }
@@ -555,28 +507,19 @@ footer .iconMove img {
 }
 .span4.description {
  height:30vh;
-/* border: 1px solid black;*/
-/*    background-color: #333;*/
 }
 .span4 a:hover {
  background-color:blue;
  opacity:.5;
 }
 #experience {
-/*background: url('../images/coloredpencils.jpeg') 100% 0 no-repeat fixed; */
-/*    border-bottom:20px solid #272727;*/
-/*    min-height: 100%;*/
-/*  height: 100vh; */
     z-index:-1;
   margin: 0 auto;
     border-bottom:1px solid #ddd;
     border-top: 1px solid #ddd;
     margin-bottom:50px;
-/*  width: 100%; */
-/*  max-width: 1920px; */
   position: relative; 
-/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-/*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
+
 }
 #experience .row3 {
  font-size:16px;   
@@ -593,18 +536,9 @@ footer .iconMove img {
 }
 
 #logos {
-
-/*background: url('../images/thankscoffee.png') 0% 0 no-repeat fixed;*/
-
-/*background: url('../images/coffeecup2.png') 0% 0 no-repeat fixed;*/
-/*  height:100vh;*/
     z-index:-1;
   margin: 0 auto; 
-/*  width: 100%; */
-/*  max-width: 1920px; */
   position: relative; 
-/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
-/*  box-shadow: 0 0 50px rgba(0,0,0,0.8);*/
 }
 .coffee {
     background: url('../images/portfolio-background-thanks.png') 40% 55% no-repeat fixed;
@@ -614,7 +548,6 @@ footer .iconMove img {
     
 }
 #logos article {
-/*  height: 458px; */
   position: absolute; 
   text-align: center; 
   top: 150px; 
@@ -670,9 +603,6 @@ footer {
     background: url('../images/portfolio-background.jpg') 50% 0 repeat fixed;
 -webkit-text-fill-color: transparent;
     font-weight:100;
-/*    display:inline-block;*/
-/*    width:10%;*/
-/*    margin-left:-30%;*/
     margin-top:25px;
     -webkit-background-clip: text;
     font-size:95px;
@@ -705,7 +635,6 @@ footer {
 #grayline {
 width:75%;
 margin-left:12%;
-/*    margin-top:40px;*/
     height:25px;
     margin-bottom:40px;
 }
@@ -718,11 +647,9 @@ margin-left:12%;
   font-family: Century Gothic, sans-serif;
   color: #F9F9F9;
   font-weight: 100;
-/*  text-shadow: 4px 0px 4px black;*/
   font-size: 2em;
   line-height: 50px;
   position: relative;
-/*  bottom: -50px;*/
 }
 .phone {
     color: #777;
@@ -802,18 +729,9 @@ margin-left:12%;
         .content ul {
             margin:0;
         }
-    .background {
-/*        background:none;*/
-    }
-   
-*/
     .row-fluid {
         padding-top:0px;
-    }
-    #experience .background, #projects .background {
-/*     height:150vh;   */
-    }
-    
+    }   
   .main-header {
     left: 5px;
     top: 50px;
