@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 html, body {
-/*    height:85%;*/
+    height:85%;
   
 }
 header, section, footer, aside, nav, main, article, figure {
@@ -311,7 +311,7 @@ nav select {
   display: none;
     color:#0081C1;
     font-weight:700;
-/*    background-color:#2E2E2E;*/
+    background-color:#2E2E2E;
 /*    text-shadow:2px 2px black;*/
     border:2px solid #1F1F1F;
     height:35px;
