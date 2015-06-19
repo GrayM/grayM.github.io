@@ -8,7 +8,7 @@
 }
 html, body {
     height:85%;
-  
+    padding:0;
 }
 header, section, footer, aside, nav, main, article, figure {
     display: block; 
