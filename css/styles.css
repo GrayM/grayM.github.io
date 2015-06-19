@@ -758,7 +758,8 @@ margin-left:12%;
           display:none !important;
       }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px)
+and (orientation: landscape) {
     .span2.label, .label.experience-label {
           display:none !important;
       }
@@ -808,11 +809,8 @@ margin-left:12%;
         .content ul {
             margin:0;
         }
-    .background {
-        background:none;
-    }
    
-*/
+
     .row-fluid {
         padding-top:0px;
     }
@@ -840,6 +838,16 @@ margin-left:12%;
   }
     .row-fluid {
         padding-top:0;
+    }
+
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 640px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+      #home, .background {
+        height:100vh;
     }
 
 }
