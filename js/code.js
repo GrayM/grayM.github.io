@@ -1,11 +1,4 @@
 $(document).ready(function() {
-   var cm = confirm('did you know you\'re the purdiest most awesome girl in the world?');
-    if (cm == true) {
-     alert('then you are correct!');   
-        
-    } else {
-        alert('but...but... yes huh!  i said so!');
-    }
     
 var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
     
