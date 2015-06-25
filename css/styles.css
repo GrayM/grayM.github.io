@@ -354,12 +354,15 @@ text-align: center;
 
 .container .headerExpand {
   padding: 2px;
-  text-align:center;
   cursor: pointer;
   font-weight: bold;
   font-size: 1.5em;
     color:#fff;
     padding-top:35px;
+    max-width: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
 }
 .headerExpand span {
     font-weight:100;
